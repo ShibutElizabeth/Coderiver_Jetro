@@ -1,0 +1,92 @@
+@import "//fonts.fontstorage.com/import/bebasneue.css";
+
+body {
+	color: #8f8f8f;
+	font: 12px Tahoma, sans-serif;
+	background: #fff;
+	margin: 0;
+}
+body .stripe{
+	position: absolute;
+	z-index: -1;
+	top: 100px;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 60px;
+	background-color: #f3af9d;
+	
+}
+.logo{
+	height: 26px;
+	width: auto; 
+}
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrapper {
+	max-width: 68vw;
+	margin: auto;
+}
+
+header {
+	padding: 20px 0;
+}
+
+footer {
+	clear: both;
+	background: #7e7e7e;
+	color: #dbdbdb;
+	font-size: 11px;
+}
+
+.container{
+	background-color: blueviolet;
+	padding: 10px;
+	max-width: 68vw;
+	height: 100vh;
+	position: relative;
+}
+.container h1{
+	position: absolute;
+	color: yellow;
+}
+.header__nav{
+	max-width: 30vw;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.header__nav a{
+	color: #b9b9b9;
+	text-decoration: none;
+	padding-left: 1.6vw;
+}
+.header__nav .is-active{
+	color: #e8663c;
+}
+.text-lg{
+	font-family: 'Bebas Neue';
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1em;
+}
+.text-sm{
+	font-family: 'Bebas Neue';
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 1.6em;
+}

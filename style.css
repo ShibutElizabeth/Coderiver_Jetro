@@ -1,4 +1,5 @@
 @import "//fonts.fontstorage.com/import/bebasneue.css";
+@import "//fonts.fontstorage.com/import/aileron.css";
 
 body {
 	color: #8f8f8f;
@@ -9,7 +10,7 @@ body {
 body .stripe{
 	position: absolute;
 	z-index: -1;
-	top: 100px;
+	top: 102px;
 	left: 0;
 	right: 0;
 	width: 100vw;
@@ -41,7 +42,7 @@ body .stripe{
 }
 
 header {
-	padding: 20px 0;
+	padding: 20px 10px;
 }
 
 footer {
@@ -52,16 +53,17 @@ footer {
 }
 
 .container{
-	background-color: blueviolet;
+	background-color: rgb(255, 255, 255);
 	padding: 10px;
 	max-width: 68vw;
-	height: 100vh;
+	height: auto;
 	position: relative;
 }
 .container h1{
 	position: absolute;
 	color: yellow;
 }
+
 .header__nav{
 	max-width: 30vw;
 	display: flex;
@@ -89,4 +91,44 @@ footer {
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 1.6em;
+}
+.slider{
+	width: 100%;
+	height: auto;
+	margin-top: -22px;
+}
+.posts{
+	max-width: 68vw;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.post{
+	display: block;
+	max-width: 33.3%;
+}
+.post__img{
+	max-width: 50px;
+	height: auto;
+}
+.post__title{
+	color: #e8663c;
+	font-family: 'Bebas Neue';
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.4em;
+	max-width: fit-content;
+}
+.post__description{
+	color: #e8663c;
+	font-family: 'Aileron';
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.5em;
+	width: 700px;
+}
+.post__hat{
+	display: block;
 }

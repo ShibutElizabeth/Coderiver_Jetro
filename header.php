@@ -8,7 +8,6 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div class="stripe"></div>
 	<div class="wrapper">
     <header>
 		<a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="logo" class="logo"></a>
@@ -20,3 +19,4 @@
 		<a href="/">CONTACT US</a>
 		</div>
 	</header>
+	<div class="stripe"></div>

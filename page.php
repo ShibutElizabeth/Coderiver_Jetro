@@ -2,7 +2,7 @@
 <div class="container aligncenter">
 <div class="slider">
 		<?php echo do_shortcode('[URIS id=55]'); ?>
-		</div>
+		</div> 
 <div class="posts">
 	<div class="post">
 		<div class="post__hat">
@@ -25,10 +25,19 @@
 			<img class="post__img" src="<?php bloginfo('template_url'); ?>/images/icon3.png"/>
 			<h2 class="font-title post__title">FOLLOW ME ON TWITTER, FACEBOOK & PINTEREST</h2>
 		</div>
-		<!--   -->
 		<p class="post__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui sunt, accusantium dolorum labore possimus voluptate velit a necessitatibus ea natus reiciendis quod repellendus autem nostrum ex exercitationem nobis! Molestias.</p>
 		<button class="font-title post__button">MORE</button>
 	</div>
+	<div class="recent">
+		<div class="recent__title-block">
+		<p class="font-title post__title recent__title">RECENT WORKS</p>
+		<div class="recent__dashed"></div>
+		</div>
+		<div class="gallery-min">
+			<p>Last Christmast</p> 
+		</div>
+	</div>
+	
 	<section>
 	
 	<?php if (have_posts()): while (have_posts()): the_post(); ?>

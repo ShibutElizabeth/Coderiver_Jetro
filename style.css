@@ -10,13 +10,23 @@ body {
 body .stripe{
 	position: absolute;
 	z-index: -1;
+	background-color: #f3af9d;
+}
+.stripe__header{
 	top: 102px;
 	left: 0;
 	right: 0;
 	width: 100vw;
 	height: 60px;
-	background-color: #f3af9d;
-	
+}
+.stripe__footer{
+	position: relative !important;
+	left: -25%;
+	right: 0;
+	bottom: 2%;
+	top: auto;
+	width: 100vw;
+	height: 260px;
 }
 .logo{
 	height: 26px;
@@ -47,14 +57,19 @@ header {
 
 footer {
 	clear: both;
-	background: #7e7e7e;
-	color: #dbdbdb;
-	font-size: 11px;
+    background: #e8663c;
+    color: #ffffff;
+    font-size: 11px;
+    height: 250px;
+    max-width: 66vw;
+    padding: 6px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .container{
 	background-color: rgb(255, 255, 255);
-	padding: 10px;
+	padding: 10px 10px 0px 10px;
 	max-width: 68vw;
 	height: auto;
 	position: relative;
@@ -98,6 +113,7 @@ footer {
 	margin-top: -22px;
 }
 .posts{
+	padding-top: 20px;
 	max-width: 68vw;
 	height: auto;
 	display: flex;
@@ -132,7 +148,7 @@ footer {
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 1.5em;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	max-width: 300px;
 }
 .post__hat{
@@ -150,11 +166,12 @@ footer {
 	height: fit-content;
 	color:rgb(255, 255, 255);
 	bottom: 0;
-	top:auto;
+	top: auto;
 	position: absolute;
 	border: none;
 }
 .recent{
+	padding-top: 40px;
 	display: block;
 	width: 100%;
 	height: auto;
@@ -184,7 +201,32 @@ footer {
 	  grid-area: dashed;
 }
 .gallery-min{
+	padding-top: 20px;
+	max-width: 70vw;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.card{
+	display: block;
+	width: 23%;
+	padding-bottom: 40px;
+}
+.card__img{
 	width: 100%;
-	height: 200px;
-	background-color: sandybrown;
+	height: auto;
+}
+.card__text{
+	margin-top: -12px;
+	padding: 7px 10px;
+	border: 1px solid #cfcfcf;
+}
+.card__description{
+	margin-top: -10px;
+	margin-bottom: 0;
+	color: #e8663c;
+	font-size: 16px;
+	font-weight: bold;
 }

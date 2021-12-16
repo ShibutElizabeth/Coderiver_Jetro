@@ -2,8 +2,8 @@
 <div class="container aligncenter">
 <div class="slider">
 		<?php echo do_shortcode('[URIS id=55]'); ?>
-		</div> 
-<div class="posts">
+		</div>
+<div class="posts"> 
 	<div class="post">
 		<div class="post__hat">
 			<img class="post__img" src="<?php bloginfo('template_url'); ?>/images/icon1.png"/>
@@ -34,7 +34,34 @@
 		<div class="recent__dashed"></div>
 		</div>
 		<div class="gallery-min">
-			<p>Last Christmast</p> 
+			<div class="card">
+				<img class="card__img" src="<?php bloginfo('template_url'); ?>/images/card1.png"/>
+				<div class="card__text">
+				   <h2 class="font-title">CHARACTER DESIGN</h2>
+				<p class="font-title card__description">June 14, 2020</p>
+			    </div>
+			</div>
+			<div class="card">
+			<img class="card__img" src="<?php bloginfo('template_url'); ?>/images/card2.png"/>
+			<div class="card__text">
+				<h2 class="font-title">BROSCHURE DESIGN</h2>
+				<p class="font-title card__description">June 14, 2020</p>
+			</div>	
+			</div>
+			<div class="card">
+			<img class="card__img" src="<?php bloginfo('template_url'); ?>/images/card3.png"/>
+			<div class="card__text">	
+			<h2 class="font-title">SOCIAL MEDIA BUTTONS</h2>
+				<p class="font-title card__description">June 14, 2020</p>
+			</div>
+			</div>
+			<div class="card">
+			<img class="card__img" src="<?php bloginfo('template_url'); ?>/images/card4.png"/>
+			<div class="card__text">
+				<h2 class="font-title">10 AMAZING WEBSITES</h2>
+				<p class="font-title card__description">June 14, 2020</p>
+			</div> 
+			</div>
 		</div>
 	</div>
 	
@@ -43,7 +70,6 @@
 	<?php if (have_posts()): while (have_posts()): the_post(); ?>
 		<?php the_content(); ?>
 	<?php endwhile; endif; ?>
-    </section>
-
+    </section> 
 </div>
 <?php get_footer(); ?>

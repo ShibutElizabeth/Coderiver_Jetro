@@ -19,4 +19,4 @@
 		<a href="/">CONTACT US</a>
 		</div>
 	</header>
-	<div class="stripe"></div>
+	<div class="stripe stripe__header"></div>

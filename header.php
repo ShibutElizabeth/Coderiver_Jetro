@@ -8,10 +8,10 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<div class="wrapper">
+<div class="wrapper">
     <header>
 		<a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="logo" class="logo"></a>
-		<div class="header__nav alignright text-sm">
+		<div class="header__nav flex-layout alignright text-sm">
 		<a href="/" class="is-active">HOME</a>
 		<a href="/">ABOUT US</a>
 		<a href="/">BLOG</a>
@@ -20,3 +20,4 @@
 		</div>
 	</header>
 	<div class="stripe stripe__header"></div>
+</div>

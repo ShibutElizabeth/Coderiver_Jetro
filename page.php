@@ -3,9 +3,9 @@
 <div class="slider">
 		<?php echo do_shortcode('[URIS id=55]'); ?>
 		</div>
-<div class="posts"> 
+<div class="posts flex-layout"> 
 	<div class="post">
-		<div class="post__hat">
+	<div class="post__hat flex-layout">
 			<img class="post__img" src="<?php bloginfo('template_url'); ?>/images/icon1.png"/>
 			<h2 class="font-title post__title">CHECK OUT MY LATEST PORTFOLIO</h2>
 		</div>
@@ -13,7 +13,7 @@
 		<button class="font-title post__button">MORE</button>
 	</div>
 	<div class="post">
-		<div class="post__hat">
+		<div class="post__hat flex-layout">
 			<img class="post__img" src="<?php bloginfo('template_url'); ?>/images/icon2.png"/>
 			<h2 class="font-title post__title">OFFER TOP NOTCH QUALITY     WORK & SERVICES</h2>
 		</div>			
@@ -21,7 +21,7 @@
 		<button class="font-title post__button">MORE</button>
 	</div>
 	<div class="post">
-		<div class="post__hat">
+	<div class="post__hat flex-layout">
 			<img class="post__img" src="<?php bloginfo('template_url'); ?>/images/icon3.png"/>
 			<h2 class="font-title post__title">FOLLOW ME ON TWITTER, FACEBOOK & PINTEREST</h2>
 		</div>
@@ -33,7 +33,7 @@
 		<p class="font-title post__title recent__title">RECENT WORKS</p>
 		<div class="recent__dashed"></div>
 		</div>
-		<div class="gallery-min">
+		<div class="gallery-min flex-layout">
 			<div class="card">
 				<img class="card__img" src="<?php bloginfo('template_url'); ?>/images/card1.png"/>
 				<div class="card__text">

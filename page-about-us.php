@@ -158,14 +158,14 @@
                 <div class="dashed"></div>
             </div>
             <div class="grid-layout__side">
-                <div class="side__img"></div>
-                <div class="side__img"></div>
-                <div class="side__img"></div>
-                <div class="side__img"></div>
-                <div class="side__img"></div>
-                <div class="side__img"></div>
-                <div class="side__img"></div>
-                <div class="side__img"></div>
+                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
+                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
+                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
+                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
+                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
+                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
+                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
+                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
             </div>
         </div>
     </div>

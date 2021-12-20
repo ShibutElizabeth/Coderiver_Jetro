@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 <div class="container aligncenter">
-<h1>HELLO BLOG!</h1>
+<div class="stripe stripe__page">
+        <h1 class="text-xlg">BLOG</h1>
+    </div>
     <section>
         <?php if (have_posts()): while (have_posts()): the_post(); ?>
         <?php the_content(); ?>

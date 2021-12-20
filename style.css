@@ -307,13 +307,66 @@ footer {
 .grid-layout__side{
 	margin-top: 10px;
 	display: grid;
-	min-height: 124px;
-	gap: 2%;
+	height: auto;
+	justify-content: space-between;
+	gap: 4px;
 	grid-template-columns: repeat(4, 23.5%);
 }
-.side__img{
-	height: 50px;
-	background-color: #f3b29d;
-	border: 1px solid #e8663c;
-	padding: 3px;
+.sq{
+	height: 100%;
+	width: 100%;
+}
+.filter-bar{
+	font-size: 18px;
+	font-weight: 600;
+	display: flex;
+	max-width: 20vw;
+}
+.filter-bar p{
+	margin: 10px 20px 15px 0;
+}
+.filter-bar p:hover{
+	cursor: pointer;
+}
+.filter-bar .is-active{
+	background-color: #e8663c;
+	color: #fff;
+	padding: 0 10px;
+}
+.portfolio__block{
+	transition: all 0.3s ease;
+}
+.portfolio__img{
+	position: relative;
+	z-index: 10;
+	width: 100px;
+	height:100px;
+	background-color: rgba(0, 0, 0, 0.466);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+.portfolio__block:hover{
+	opacity: 1.0;
+	cursor: pointer;
+}
+
+.contact-us__main{
+	width: 75%;
+}
+.map{
+	width: 95%;
+	height: auto;
+}
+.flex-layout__contact{
+	flex-wrap: nowrap;
+	width: 90%;
+}
+.text-block{
+	width: 30%;
+}
+.form-block{
+	width: 70%;
+}
+.color-orange{
+	color: #e8663c;
 }

@@ -12,11 +12,11 @@
     <header>
 		<a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="logo" class="logo"></a>
 		<div class="header__nav flex-layout alignright text-sm">
-		<a href="/" class="is-active">HOME</a>
-		<a href="/">ABOUT US</a>
-		<a href="/">BLOG</a>
-		<a href="/">PORTFOLIO</a>
-		<a href="/">CONTACT US</a>
+		<a href="home" class="is-active">HOME</a>
+		<a href="about-us">ABOUT US</a>
+		<a href="blog">BLOG</a>
+		<a href="portfolio">PORTFOLIO</a>
+		<a href="contact-us">CONTACT US</a>
 		</div>
 	</header>
 	<div class="stripe stripe__header"></div>

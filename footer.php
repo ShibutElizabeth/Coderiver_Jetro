@@ -1,8 +1,8 @@
 </div>
-<div class="stripe stripe__footer">
-	<footer class="flex-layout">
+<div class="stripe stripe__footer bg-color-peach">
+	<footer class="flex-layout bg-color-orange">
 		<div class="footer__col">
-			<h2 class="font-title footer__title">ABOUT JETRO</h2>
+			<h2 class="footer__title font-bebas text-m color-white">ABOUT JETRO</h2>
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ipsam asperiores, atque iure
 				consequatur neque distinctio aliquid. Incidunt molestias illo praesentium! Ab maiores debitis placeat
 				quis sequi commodi explicabo sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -11,14 +11,14 @@
 				deleniti culpa ratione!</p>
 		</div>
 		<div class="footer__col">
-			<h2 class="font-title footer__title">TWITTER WIDGET</h2>
+			<h2 class="footer__title font-bebas text-m color-white">TWITTER WIDGET</h2>
 			<p><span class="footer__twit">@firstdude</span> What an awesome design with great functionality!:)</p>
 			<p><span class="footer__twit">@seconddude</span> What an awesome design with great functionality!:)
 				<br><span class="footer__twit">about 2 hours ago</span></p>
 			<p>Follow <span class="footer__twit">@thirddude</span></p>
 		</div>
 		<div class="footer__col">
-			<h2 class="font-title footer__title">CONTACT US</h2>
+			<h2 class="footer__title font-bebas text-m color-white">CONTACT US</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur molestias obcaecati cum eum
 				laudantium fugit repudiandae reprehenderit nihil est ea doloremque corrupti qui, enim, natus cupiditate
 				deleniti culpa ratione!</p>
@@ -50,11 +50,9 @@
 						xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAMAAADHso01AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACl1BMVEVU1fMAfaUAfaUAfKQAfaQAfKMAcpYFBgYBa40AeZ8FBgYFBgYFBgYFBgYAfaUVk7hCwuJU1fNEyes6yvAzx+81x+8yxu8xxu4wxe4qwO0Wr+kOqOcetuoswu0YsekHo+UBneQDnuQUregovuwuxO4ZsuoMoeWJ0vO14/dfwe4TrOgdtep9zfHZ8Pv9/v/0+/6V1vQGnuUpwO0tw+4UrOgtrOliwe4asuobs+oSoebE6PmDzvIVregrwu0ku+sRqedcvu30+v7N7PoHn+Qqwe0GmuPZ7/sGneMgtuoOpOWS0/P8/v8SneQnvuwYr+howe73/P4Bl+IowO0ov+0DluKm2/VFsuoctOqe1/SY1fPW7vsBluImv+wNouSb1fO14fczqefH6Pluwu4UquccsugKneMImuEhoeXK6fkGmuIlvuwasOgGlOIGl+INnuI5quiY0/MNoeUkvOshueoVmuN9x/AQo+Ujvewiu+sftukFluLE5vjQ6voFl+IVq+dcuOwYmuQcs+kivOsPoeN3w+75/f8SluEgueoHl+HH5vgLnOIhuuogu+sZr+gknORNr+kWrOcPouVctuvN6PkDjt8asugfuuseuOoDkODf8Pug1fMLmuMkm+Tr9v0zouUPoOQduesJmOKVzvKGx/AIleEbteocueoQpORQrui43/YDi94VrOYcuOobuOoXsecSj+D2+/7Z7foPjuAPoOMatukat+oZtukGkOCy2/Xt9/0nmeMLmeIZtOkPoeRTruktm+QYs+kYsugDiN7T6vrH5PgYkeEKluEZtuoMnOMkl+OAw+8Ji98Mm+IatuoKl+EBid4BiN4Hkd8SqOQYtOkVreYRpOQVq+YXsOgZtekXseMIjrkYsuT///9mrqSKAAAADnRSTlMAYMl/6OeIDJXvAxkfICmJa7gAAAABYktHRNwHYIO3AAAAB3RJTUUH5QwQFB8OLnmyOgAAAe9JREFUKM9jYGBk4sMBmBgZGJj5BQRxAAF+ZgYWIWERHEBYiIWBT1QMJxDlY+ATxwOA0hIQICklLQNhycrJKygqKYOYQGkVMFBVU9fQ1AKxtNV0dPX0DQyNgGygtDEImJjq6unpmZkbG1tYWumBgLUNUBgobWtra2fv4AgScnK2dXF1AsvqubkDJYDSLi4enl7eEODj6+cPZQYEuri4AKWDgkNCoULeYeGeEZFRYKZjdFBQEFA6JiY2Lj4hESyWlJySmpYOZmZkxsTEAKWzsrJzcvPywWIFhUXFKSVgZmlZVlYWULq8vEKmsrKqGiRWU1teXlcPNruhsby8HCjdBAIVzS0gwda29qaOThCrpasbKAyU7gGD3j6wkf0TJk4C0ZOnTAWJAqWngcH0GTNBwrNmz5kLMmXe/OkgUaD0AghYuAhs+mKQrPfiJUvBgkDpZRCwfIU3HKxctXoNWBAovRYC1q3fAJPduGnzFoggUHorBGzbvgMqu3PX7j1QQYT01r37ILIz9y85sBVT+uChwyDZI0ePHdyKRfr4iZMzvXeeOn3m4Fls0lsPnDu/68LFS5e3bsUqvfXAlavXrt/Yikt669azW1EBHwPrza04wU1WBrZbt3HJ3r7FxsDOwYkrC3JysDNwsXPz8GIFPNzsXABV5VeBYDzrvQAAAABJRU5ErkJggg==" />
 				</svg>
 			</div>
-
 		</div>
 	</footer>
 	<?php wp_footer(); ?>
 </div>
 </body>
-
 </html>

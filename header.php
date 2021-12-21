@@ -11,7 +11,7 @@
 <div class="wrapper">
     <header>
 		<a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="logo" class="logo"></a>
-		<div class="header__nav flex-layout alignright text-sm">
+		<div class="header__nav flex-layout align-right color-lightgray text-m font-bebas">
 		<a href="home" class="is-active">HOME</a>
 		<a href="about-us">ABOUT US</a>
 		<a href="blog">BLOG</a>
@@ -19,5 +19,5 @@
 		<a href="contact-us">CONTACT US</a>
 		</div>
 	</header>
-	<div class="stripe stripe__header"></div>
+	<div class="stripe stripe__header bg-color-peach"></div>
 </div>

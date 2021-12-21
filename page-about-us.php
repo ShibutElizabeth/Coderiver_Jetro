@@ -1,11 +1,11 @@
 <?php get_header(); ?>
-<div class="container aligncenter">
-    <div class="stripe stripe__page">
-        <h1 class="text-xlg">ABOUT US</h1>
+<div class="container align-center">
+    <div class="stripe stripe__page bg-color-orange">
+        <h1 class="text-l font-bebas color-white padding_title">ABOUT US</h1>
     </div>
-    <div class="about flex-layout">
-        <div class="about__main">
-            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at aperiam magni
+    <div class="page-container flex-layout">
+        <div class="page-container__main">
+            <p class="text-xs color-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at aperiam magni
                 facere.
                 Mollitia laudantium rerum quasi corporis iure totam molestiae expedita, quibusdam magni, accusamus illo
                 doloremque natus molestias tempore!
@@ -13,7 +13,7 @@
                 quisquam, explicabo exercitationem consequuntur mollitia nesciunt voluptatum quis perferendis nihil
                 numquam optio perspiciatis excepturi. Id, voluptas.
             </p>
-            <p class="about__text float__right"><img class="main__img float__left"
+            <p class="text-xs color-gray align-right"><img class="about__img align-left margin-right_about"
                     src="<?php bloginfo('template_url'); ?>/images/mike.png" />
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eum, dolores optio explicabo ipsum
                 fugiat placeat aspernatur fugit maxime reprehenderit voluptas! Harum omnis quam quisquam totam expedita
@@ -33,7 +33,7 @@
                 reiciendis iusto.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, neque.
             </p>
-            <p class="about__text">
+            <p class="text-xs color-gray">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eum, dolores optio explicabo ipsum
                 fugiat placeat aspernatur fugit maxime reprehenderit voluptas! Harum omnis quam quisquam totam expedita
                 fuga sunt provident.
@@ -44,7 +44,7 @@
                 possimus nulla repudiandae officia molestiae soluta beatae in repellat distinctio officiis dolore
                 pariatur iste sed. Autem.
             </p>
-            <p class="about__text">
+            <p class="text-xs color-gray">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquam quis ad adipisci nam! Fugit,
                 unde dignissimos. Eligendi libero rerum totam facere at vitae corrupti, enim, iusto maxime reprehenderit
                 natus.
@@ -55,8 +55,8 @@
                 possimus nulla repudiandae officia molestiae soluta beatae in repellat distinctio officiis dolore
                 pariatur iste sed. Autem.
             </p>
-            <p class="about__text float__right">
-                <svg class="float__left main__svg" xmlns="http://www.w3.org/2000/svg"
+            <p class="text-xs color-gray align-right">
+                <svg class="about__svg align-left margin-right_about" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="8.467mm" height="8.930mm">
                     <text kerning="auto" font-family="Bebas Neue" fill="rgb(0, 0, 0)" font-size="36px" x="0px" y="34px">
                         <tspan font-size="36px" font-family="HelveticaNeue" font-weight="bold" fill="#E8603C">D</tspan>
@@ -72,9 +72,9 @@
                 possimus nulla repudiandae officia molestiae soluta beatae in repellat distinctio officiis dolore
                 pariatur iste sed. Autem.
             </p>
-            <div class="main__quote">
-                <i class="about__text float__right">
-                    <svg class="float__left" xmlns="http://www.w3.org/2000/svg"
+            <div class="about__quote">
+                <i class="text-xs color-gray align-right">
+                    <svg class="align-left margin-right_about" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="2.822mm" height="27.869mm">
                         <path fill-rule="evenodd" fill="rgb(232, 102, 60)"
                             d="M0.000,0.000 L8.000,0.000 L8.000,79.000 L0.000,79.000 L0.000,0.000 Z" />
@@ -89,15 +89,15 @@
                     quidem quas voluptatibus voluptates!
                 </i>
             </div>
-            <div class="flex-layout main__textblock">
-                <p class="about__text float__left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
+            <div class="block flex-layout flex-layout--nowrap">
+                <p class="text-xs color-gray align-left margin-right_about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
                     enim, veniam minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam
                     maxime ipsum eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
                     voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
                     minus asperiores. Placeat!
                 </p>
-                <p class="about__text float__right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
+                <p class="text-xs color-gray align-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
                     enim, veniam minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam
                     maxime ipsum eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
@@ -105,22 +105,22 @@
                     minus asperiores. Placeat!
                 </p>
             </div>
-            <div class="flex-layout main__textblock">
-                <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
+            <div class="block flex-layout flex-layout--nowrap">
+                <p class="text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
                     voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
                     minus asperiores. Placeat!
                 </p>
-                <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
+                <p class="text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
                     voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
                     minus asperiores. Placeat!
                 </p>
-                <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
+                <p class="text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
@@ -129,43 +129,51 @@
                 </p>
             </div>
         </div>
-        <div class="about__side">
-            <div class="flex-layout side__titleblock">
-                <p class="font-title post__title recent__title side__title">ABOUT JETRO</p>
-                <div class="dashed"></div>
+        <div class="page-container__side">
+            <div class="page-container__sideblock">
+                <div class="flex-layout flex-layout--nowrap">
+                    <p class="side__title font-bebas color-orange text-m">ABOUT JETRO</p>
+                    <div class="dashed"></div>
+                </div>
+                <p class="text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim,
+                    veniam
+                    minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
+                    eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
+                    voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
+                    minus
+                    asperiores. Placeat!
+                </p>
             </div>
-            <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
-                minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
-                eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
-                voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae minus
-                asperiores. Placeat!
-            </p>
-            <div class="flex-layout side__titleblock">
-                <p class="font-title post__title recent__title side__title">CATEGORIES</p>
-                <div class="dashed"></div>
+            <div class="page-container__sideblock">
+                <div class="flex-layout flex-layout--nowrap">
+                    <p class="side__title font-bebas color-orange text-m">CATEGORIES</p>
+                    <div class="dashed"></div>
+                </div>
+                <p class="text-xs color-gray">
+                    Video(3)
+                    <br>Sport(5)
+                    <br>Media(2)
+                    <br>Entertainment(7)
+                    <br>Life(4)
+                    <br>Super Cool Stuff(8)
+                </p>
             </div>
-            <p class="about__text">
-                Video(3)
-                <br>Sport(5)
-                <br>Media(2)
-                <br>Entertainment(7)
-                <br>Life(4)
-                <br>Super Cool Stuff(8)
-            </p>
-            <div class="flex-layout side__titleblock">
-                <p class="font-title post__title recent__title side__title">PHOTO GALLERY</p>
-                <div class="dashed"></div>
-            </div>
-            <div class="grid-layout__side">
-                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
-                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
-                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
-                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
-                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
-                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
-                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
-                <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png"/>
+            <div class="page-container__sideblock">
+                <div class="flex-layout flex-layout--nowrap">
+                    <p class="side__title font-bebas color-orange text-m">PHOTO GALLERY</p>
+                    <div class="dashed"></div>
+                </div>
+                <div class="grid-layout">
+                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
+                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
+                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
+                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
+                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
+                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
+                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
+                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
+                </div>
             </div>
         </div>
     </div>

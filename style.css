@@ -252,34 +252,35 @@ footer {
 	width: 100%;
 }
 
-/* posts block */
-.posts{
+/* services block */
+.services{
 	padding-top: 20px;
 	max-width: 68vw;
 	height: auto;
 }
-.post{
+.service{
 	display: block;
 	max-width: 33.3%;
+	width: 31%;
 	height: auto;
 	position: relative;
 }
-.post__img{
+.service__img{
 	max-width: 50px;
 	height: auto;
 }
-.post__title{
+.service__title{
     line-height: 1.2em;
     max-width: 245px;
     padding-left: 20px;
 }
-.post__description{
+.service__description{
 	font-weight: 300;
 	line-height: 1.5em;
 	padding-bottom: 40px;
 	max-width: 300px;
 }
-.post__hat{
+.service__hat{
     align-items: center;
     align-content: baseline;
 }

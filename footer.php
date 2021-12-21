@@ -1,6 +1,6 @@
 </div>
 <div class="stripe stripe__footer bg-color-peach">
-	<footer class="flex-layout bg-color-orange">
+	<footer class="flex-layout flex-layout--nowrap bg-color-orange">
 		<div class="footer__col">
 			<h2 class="footer__title font-bebas text-m color-white">ABOUT JETRO</h2>
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ipsam asperiores, atque iure
@@ -23,7 +23,7 @@
 				laudantium fugit repudiandae reprehenderit nihil est ea doloremque corrupti qui, enim, natus cupiditate
 				deleniti culpa ratione!</p>
 			<p>imformation@jetro.com <br>1.22.333.4444</p>
-			<div class="flex-layout footer__svg">
+			<div class="flex-layout flex-layout--nowrap footer__svg">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10.583mm"
 					height="10.936mm">
 					<image x="0px" y="0px" width="30px" height="31px"

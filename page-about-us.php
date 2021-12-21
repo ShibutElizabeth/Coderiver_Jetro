@@ -55,7 +55,7 @@
                 possimus nulla repudiandae officia molestiae soluta beatae in repellat distinctio officiis dolore
                 pariatur iste sed. Autem.
             </p>
-            <p class="text-xs color-gray align-right">
+            <p class="text-xs color-gray align-right margin-bottom">
                 <svg class="about__svg align-left margin-right_about" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="8.467mm" height="8.930mm">
                     <text kerning="auto" font-family="Bebas Neue" fill="rgb(0, 0, 0)" font-size="36px" x="0px" y="34px">
@@ -106,21 +106,21 @@
                 </p>
             </div>
             <div class="block flex-layout flex-layout--nowrap">
-                <p class="text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
+                <p class="about__p text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
                     voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
                     minus asperiores. Placeat!
                 </p>
-                <p class="text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
+                <p class="about__p text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
                     voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
                     minus asperiores. Placeat!
                 </p>
-                <p class="text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
+                <p class="about__p text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim, veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum

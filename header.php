@@ -11,7 +11,7 @@
 <div class="wrapper">
     <header>
 		<a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="logo" class="logo"></a>
-		<div class="header__nav flex-layout align-right color-lightgray text-m font-bebas">
+		<div class="header__nav flex-layout flex-layout--nowrap align-right color-lightgray text-m font-bebas">
 		<a href="home" class="is-active">HOME</a>
 		<a href="about-us">ABOUT US</a>
 		<a href="blog">BLOG</a>

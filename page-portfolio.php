@@ -4,92 +4,128 @@
         <h1 class="text-l font-bebas color-white padding_title">PORTFOLIO</h1>
     </div>
     <div class="filter-bar text-m font-bebas">
-        <p class="is-active">ALL</p>
-        <p>PRINT</p>
-        <p>WEB</p>
-        <p>PHOTOSHOP</p>
-        <p>WORDPRESS</p>
+        <a href="#" class="is-active ">ALL</a>
+        <a href="#">PRINT</a>
+        <a href="#">WEB</a>
+        <a href="#">PHOTOSHOP</a>
+        <a href="#">WORDPRESS</a>
     </div>
     <div class="flex-layout gallery">
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/card1.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/card1.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">CHARACTER DESIGN</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/card2.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/card2.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">BROSCHURE DESIGN</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/card3.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/card3.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">SOCIAL MEDIA BUTTONS</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/card4.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/card4.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">10 AMAZING WEBSITES</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/item5.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item5.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">CHARACTER DESIGN</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/item6.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item6.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">BROSCHURE DESIGN</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/item7.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item7.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">SOCIAL MEDIA BUTTONS</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/item8.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item8.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">10 AMAZING WEBSITES</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/item9.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item9.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">CHARACTER DESIGN</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/item10.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item10.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">BROSCHURE DESIGN</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/item11.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item11.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">SOCIAL MEDIA BUTTONS</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
             </div>
         </div>
         <div class="card">
-            <img class="block" src="<?php bloginfo('template_url'); ?>/images/item12.png" />
+            <div class="portfolio__block">
+                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item12.png" />
+            </div>
             <div class="card__text">
                 <h2 class="font-bebas text-m color-lightgray">10 AMAZING WEBSITES</h2>
                 <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>

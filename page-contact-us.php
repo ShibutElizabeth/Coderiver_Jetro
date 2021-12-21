@@ -14,10 +14,6 @@
                         minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime
                         ipsum
                         eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
-                        voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia
-                        vitae
-                        minus asperiores. Placeat!
                     </p>
                     <p class="text-xs color-gray"><b><span class="color-orange">Best PSD Freebies</span></b>
                         <br>328 Ave C
@@ -30,12 +26,13 @@
                         <br><b>e:</b> psd@freebies.com
                     </p>
                 </div>
-                <div class="contact__formblock">
-                    <form>
-                        <input type="text" placeholder="name" />
-                        <input type="text" placeholder="last name" />
-                        <input type="text" placeholder="email" />
-                        <textarea type="text" placeholder="message"></textarea>
+                <div class="contact__formblock margin-top--plus">
+                    <form class="contact__form">
+                        <input type="text" placeholder="FIRSTNAME" class="contact__input color-orange font-bebas text-ssm"/>
+                        <input type="text" placeholder="LASTNAME" class="contact__input color-orange font-bebas text-ssm"/>
+                        <input type="text" placeholder="EMAIL" class="contact__input color-orange font-bebas text-ssm"/>
+                        <textarea type="text" placeholder="MESSAGE" class="contact__input color-orange font-bebas text-ssm"></textarea>
+                        <input type="button" class="button align-left font-bebas color-white bg-color-orange text-sm" value="submit"/>
                     </form>
                 </div>
             </div>

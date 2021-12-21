@@ -42,7 +42,11 @@ body {
 	font-weight: bold;
 }
 .text-sm{
-	font-size: 15px;
+	font-size: 16px;
+}
+.text-ssm{
+	font-size: 18px;
+	font-weight: 600;
 }
 .text-m{
 	font-size: 25px;
@@ -336,11 +340,48 @@ footer {
 	height: auto;
 }
 .contact__textblock{
-	width: 30%;
+	width: 25%;
+	margin-top: 20px;
 }
 .contact__formblock{
-	width: 70%;
+	width: 65%;
+	height: auto;
+	position: relative;
+	margin-bottom: 20px;
+	padding-bottom: 35px;
 }
+.contact__form{
+	width: 100%;
+	display: inline-block;
+}
+input[type=text], textarea{
+	border: 1px solid #e8663c;
+	color: #e8663c;
+	min-width: 200px;
+	min-height: 30px;
+	margin: 5px 20px 10px 0;
+	padding-left: 20px;
+}
+textarea{
+	min-height: 180px;
+	width: 100%;
+	padding: 12px 20px;
+	resize: none;
+}
+input::placeholder, 
+textarea::placeholder{ 
+	color: #e8663c;
+}
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder{ 
+	color: #e8663c;
+}
+
+input::-moz-placeholder , 
+textarea::-moz-placeholder { 
+	color: #e8663c;
+}
+
 
 /* filter-bar */
 .filter-bar{
@@ -379,6 +420,9 @@ footer {
 	top: auto;
 	height: fit-content;
 	max-width: 70px;
-	padding: 7px 13px;
+	padding: 7px 15px;
 	border: none;
+}
+.button:hover{
+	cursor: pointer;
 }

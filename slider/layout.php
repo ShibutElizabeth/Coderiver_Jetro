@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<?php if($WRIS_L3_Width == "100%") { ?>
 		width: "100%",
 		<?php } else if($WRIS_L3_Width == "custom") { ?>
-		width: <?php if($WRIS_L3_Slider_Width != "") echo esc_js($WRIS_L3_Slider_Width); else echo esc_js("1000"); ?>,
+		width:  "95%",
 		<?php } else if($WRIS_L3_Width == "fullWidth") { ?>
 		forceSize: 'fullWidth',
 		<?php } ?>
@@ -270,8 +270,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					} //end of is_array 
 				?>
 			</div>
-	   
-			<!---- slides div end ---->
+			<!---- slides div end   ---->
 			<?php if($WRIS_L3_Slider_Navigation == 1) { ?>
 			<!-- slides thumbnails div start -->
 			<div class="sp-thumbnails width-full" style="width: 100%; height: 150px;">
@@ -294,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						if($slide_alt == "" && $slide_title == "") {
 							$slide_alt = $post_title;
 						}
-						$j++; ?>  
+						$j++; ?>   
 						<img class="sp-thumbnail" src="<?php echo esc_url(URIS_PLUGIN_URL."assets/img/loading.gif"); ?>" data-src="<?php echo esc_url($slide_medium[0]); ?>" alt="<?php echo $slide_alt; ?>"/>
 					<?php } // end of for each
 				}// end of is_array ?>

@@ -10,7 +10,7 @@
 
 .slider-pro {
 	position: relative;
-	margin: 0 auto;
+	margin: 0;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
@@ -132,7 +132,7 @@
 }
 .sp-top-thumbnails .sp-thumbnail-container,
 .sp-bottom-thumbnails .sp-thumbnail-container:first-child {
-	margin-left: 0;
+	margin-left: 0; 
 }
 .sp-top-thumbnails .sp-thumbnail-container:first-child,
 .sp-bottom-thumbnails .sp-thumbnail-container:first-child {

@@ -22,8 +22,8 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
-                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/card1.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="1" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item1.png" />
             </div>
             <!-- END portfolio__block -->
             
@@ -41,8 +41,8 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
-                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/card2.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="2" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item2.png" />
             </div>
             <!-- END portfolio__block -->
             
@@ -60,8 +60,8 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
-                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/card3.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="3" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item3.png" />
             </div>
             <!-- END portfolio__block -->
             
@@ -79,8 +79,8 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
-                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/card4.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="4" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
+                <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item4.png" />
             </div>
             <!-- END portfolio__block -->
             
@@ -98,7 +98,7 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="5" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
                 <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item5.png" />
             </div>
             <!-- END portfolio__block -->
@@ -117,7 +117,7 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="6" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
                 <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item6.png" />
             </div>
             <!-- END portfolio__block -->
@@ -136,7 +136,7 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="7" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
                 <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item7.png" />
             </div>
             <!-- END portfolio__block -->
@@ -155,7 +155,7 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="8" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
                 <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item8.png" />
             </div>
             <!-- END portfolio__block -->
@@ -174,7 +174,7 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="9" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
                 <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item9.png" />
             </div>
             <!-- END portfolio__block -->
@@ -193,7 +193,7 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="10" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
                 <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item10.png" />
             </div>
             <!-- END portfolio__block -->
@@ -212,7 +212,7 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+            <a href="portfolio-item"><img class="block portfolio__more" id="11" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
                 <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item11.png" />
             </div>
             <!-- END portfolio__block -->
@@ -231,7 +231,7 @@
 
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
-                <img class="block portfolio__more" src="<?php bloginfo('template_url'); ?>/images/more.png" />
+                <a href="portfolio-item"><img class="block portfolio__more" id="12" src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
                 <img class="block portfolio__img" src="<?php bloginfo('template_url'); ?>/images/item12.png" />
             </div>
             <!-- END portfolio__block -->

@@ -250,6 +250,7 @@ footer {
 .gallery{
 	padding-top: 20px;
 	max-width: 68vw;
+	align-items: stretch;
 	height: max-content;
 }
 .block{
@@ -333,13 +334,15 @@ footer {
 .card{
 	display: block;
 	width: 23%;
-	padding-bottom: 40px;
+	margin-bottom: 40px;
+	
 }
 .card__text{
-	margin-top: -12px;
-	padding: 7px 10px;
-	border: 1px solid #b9b9b9;
-	font-size: 15px;
+	margin-top: -23px;
+    padding: 0 10px;
+    font-size: 15px;
+    border: 1px solid #b9b9b9;
+    border-top: none;
 }
 .card__description{
 	margin-top: -20px;
@@ -522,9 +525,6 @@ textarea::-moz-placeholder {
 .filter-bar .is-active{
 	background-color: #e8663c;
 	color: #fff;
-}
-.pagination-bar{
-	margin-left: 85px;
 }
 .pagination-bar a{
 	color: #fff;

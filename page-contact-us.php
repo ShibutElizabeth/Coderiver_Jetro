@@ -48,7 +48,7 @@
                             class="contact__input" />
                         <textarea type="text" placeholder="MESSAGE"
                             class="contact__input"></textarea>
-                        <input type="button" class="button align-left font-bebas color-white bg-color-orange text-sm"
+                        <input type="button" class="button align-left"
                             value="submit" />
                     </form>
                 </div>

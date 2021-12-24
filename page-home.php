@@ -24,7 +24,7 @@
                 elit. Eius dolor,
                 architecto dolorem aspernatur maxime incidunt exercitationem temporibus ducimus quibusdam sit iusto quae
                 distinctio commodi! Ipsum qui repudiandae ut labore quasi!</p>
-            <button class="button font-bebas color-white bg-color-orange text-sm">MORE</button>
+            <button class="button">MORE</button>
         </div>
         <!-- END service -->
 
@@ -41,7 +41,7 @@
                 elit. Tempora debitis
                 eligendi nam facilis odio quam voluptates, laboriosam dolorem ut repellat fuga, quaerat doloribus illum,
                 possimus enim. Quam nisi sapiente esse!</p>
-            <button class="button font-bebas color-white bg-color-orange text-sm">MORE</button>
+            <button class="button">MORE</button>
         </div>
         <!-- END service -->
 
@@ -59,7 +59,7 @@
                 elit. Incidunt qui sunt,
                 accusantium dolorum labore possimus voluptate velit a necessitatibus ea natus reiciendis quod
                 repellendus autem nostrum ex exercitationem nobis! Molestias.</p>
-            <button class="button font-bebas color-white bg-color-orange text-sm">MORE</button>
+            <button class="button">MORE</button>
         </div>
         <!-- END service -->
     </div>

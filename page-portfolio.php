@@ -2,16 +2,16 @@
 <!-- BEGIN container -->
 <div class="container align-center">
     <div class="stripe stripe__page bg-color-orange">
-        <h1 class="text-l font-bebas color-white padding_title">PORTFOLIO</h1>
+        <h1 class="pagetitle">PORTFOLIO</h1>
     </div>
     <!-- BEGIN filter-bar -->
-    <div class="filter-bar text-m font-bebas">
+    <nav class="filter-bar">
         <a href="#" class="is-active ">ALL</a>
         <a href="#">PRINT</a>
         <a href="#">WEB</a>
         <a href="#">PHOTOSHOP</a>
         <a href="#">WORDPRESS</a>
-    </div>
+    </nav>
     <!-- END filter-bar -->
     
     <!-- BEGIN gallery -->
@@ -29,8 +29,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">CHARACTER DESIGN</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">CHARACTER DESIGN</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -48,8 +48,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">BROSCHURE DESIGN</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">BROSCHURE DESIGN</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -67,8 +67,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">SOCIAL MEDIA BUTTONS</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">SOCIAL MEDIA BUTTONS</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -86,8 +86,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">10 AMAZING WEBSITES</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">10 AMAZING WEBSITES</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -105,8 +105,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">CHARACTER DESIGN</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">CHARACTER DESIGN</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -124,8 +124,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">BROSCHURE DESIGN</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">BROSCHURE DESIGN</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -143,8 +143,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">SOCIAL MEDIA BUTTONS</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">SOCIAL MEDIA BUTTONS</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -162,8 +162,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">10 AMAZING WEBSITES</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">10 AMAZING WEBSITES</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -181,8 +181,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">CHARACTER DESIGN</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">CHARACTER DESIGN</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -200,8 +200,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">BROSCHURE DESIGN</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">BROSCHURE DESIGN</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -219,8 +219,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">SOCIAL MEDIA BUTTONS</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">SOCIAL MEDIA BUTTONS</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>
@@ -238,8 +238,8 @@
             
             <!-- BEGIN card__text -->
             <div class="card__text">
-                <h2 class="font-bebas text-m color-lightgray">10 AMAZING WEBSITES</h2>
-                <p class="card__description font-bebas text-s color-orange">June 14, 2020</p>
+                <h2 class="maintitle maintitle--lightgray">10 AMAZING WEBSITES</h2>
+                <p class="card__description">June 14, 2020</p>
             </div>
             <!-- END card__text -->
         </div>

@@ -2,7 +2,7 @@
 <!-- BEGIN container -->
 <div class="container align-center">
     <div class="stripe stripe__page bg-color-orange">
-        <h1 class="text-l font-bebas color-white padding_title">BLOG</h1>
+        <h1 class="pagetitle">BLOG</h1>
     </div>
 
     <!-- BEGIN page-container -->
@@ -43,19 +43,19 @@
 
                         <!-- BEGIN post__metadata -->
                         <div class="post__metadata">
-                            <p class="post__metatitle font-bebas color-orange text-sm text-sm--bold">DATE</p>
-                            <p class="post__metap color-lightgray text-xs">April 15, 2012</p>
-                            <p class="post__metatitle font-bebas color-orange text-sm text-sm--bold">TAGS</p>
-                            <p class="post__metap color-lightgray text-xs">Website | Design</p>
-                            <p class="post__metatitle font-bebas color-orange text-sm text-sm--bold">COMMENTS</p>
-                            <p class="post__metap color-lightgray text-xs">4</p>
+                            <p class="post__metatitle">DATE</p>
+                            <p class="post__metap">April 15, 2012</p>
+                            <p class="post__metatitle">TAGS</p>
+                            <p class="post__metap">Website | Design</p>
+                            <p class="post__metatitle">COMMENTS</p>
+                            <p class="post__metap">4</p>
                         </div>
                         <!-- END post__metadata -->
 
                         <!-- BEGIN post__description -->
                         <div class="post__description">
-                            <h2 class="font-bebas text-m color-orange">TOP WORDPRESS THEMES OF 2012</h2>
-                            <p class="text-xs color-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                            <h2 class="maintitle">TOP WORDPRESS THEMES OF 2012</h2>
+                            <p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
                                 at
                                 aperiam magni
                                 facere.
@@ -72,7 +72,7 @@
                         <!-- END post__description -->
                     </div>
                     <!-- END post__info -->
-                    
+
                     <div class="dashed dashed--post"></div>
                 </div>
                 <!-- END post__content -->
@@ -108,19 +108,19 @@
 
                         <!-- BEGIN post__metadata -->
                         <div class="post__metadata">
-                            <p class="post__metatitle font-bebas color-orange text-sm text-sm--bold">DATE</p>
-                            <p class="post__metap color-lightgray text-xs">April 15, 2012</p>
-                            <p class="post__metatitle font-bebas color-orange text-sm text-sm--bold">TAGS</p>
-                            <p class="post__metap color-lightgray text-xs">Website | Design</p>
-                            <p class="post__metatitle font-bebas color-orange text-sm text-sm--bold">COMMENTS</p>
-                            <p class="post__metap color-lightgray text-xs">4</p>
+                            <p class="post__metatitle">DATE</p>
+                            <p class="post__metap">April 15, 2012</p>
+                            <p class="post__metatitle">TAGS</p>
+                            <p class="post__metap">Website | Design</p>
+                            <p class="post__metatitle">COMMENTS</p>
+                            <p class="post__metap">4</p>
                         </div>
                         <!-- END post__metadata -->
 
                         <!-- BEGIN post__description -->
                         <div class="post__description">
-                            <h2 class="font-bebas text-m color-orange">JESUS TYPOGRAPHY WALLPAPER GIVEAWAY!</h2>
-                            <p class="text-xs color-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                            <h2 class="maintitle">JESUS TYPOGRAPHY WALLPAPER GIVEAWAY!</h2>
+                            <p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
                                 at
                                 aperiam magni
                                 facere.
@@ -133,7 +133,7 @@
                                 perferendis nihil
                                 numquam optio perspiciatis excepturi. Id, voluptas.
                             </p>
-                            <p class="text-xs color-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            <p class="maintext">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                 Voluptate saepe dolorum exercitationem eaque assumenda voluptatum architecto blanditiis
                                 laboriosam itaque dolor, officia necessitatibus. Velit vitae iure ut cum? Odit, officiis
                                 praesentium!
@@ -142,7 +142,7 @@
                         <!-- END post__description -->
                     </div>
                     <!-- END post__info -->
-                    
+
                     <div class="dashed dashed--post"></div>
                 </div>
                 <!-- END post__content -->
@@ -172,25 +172,25 @@
                     <div class="block">
                         <img class="post__media" src="<?php bloginfo('template_url'); ?>/images/theme2.png" />
                     </div>
-                    
+
                     <!-- BEGIN post__info -->
                     <div class="post__info flex-layout flex-layout--nowrap">
 
                         <!-- BEGIN post__metadata -->
                         <div class="post__metadata">
-                            <p class="post__metatitle font-bebas color-orange text-sm text-sm--bold">DATE</p>
-                            <p class="post__metap color-lightgray text-xs">April 15, 2012</p>
-                            <p class="post__metatitle font-bebas color-orange text-sm text-sm--bold">TAGS</p>
-                            <p class="post__metap color-lightgray text-xs">Website | Design</p>
-                            <p class="post__metatitle font-bebas color-orange text-sm text-sm--bold">COMMENTS</p>
-                            <p class="post__metap color-lightgray text-xs">4</p>
+                            <p class="post__metatitle">DATE</p>
+                            <p class="post__metap">April 15, 2012</p>
+                            <p class="post__metatitle">TAGS</p>
+                            <p class="post__metap">Website | Design</p>
+                            <p class="post__metatitle">COMMENTS</p>
+                            <p class="post__metap">4</p>
                         </div>
                         <!-- END post__metadata -->
 
                         <!-- BEGIN post__description -->
                         <div class="post__description">
-                            <h2 class="font-bebas text-m color-orange">BIG BUCK BUNNY TRAILER</h2>
-                            <p class="text-xs color-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                            <h2 class="maintitle">BIG BUCK BUNNY TRAILER</h2>
+                            <p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
                                 at
                                 aperiam magni
                                 facere.
@@ -239,7 +239,7 @@
 
                     <!-- BEGIN post__quote -->
                     <div class="post__quote bg-color-lightgray">
-                        <i class="text-xs color-gray align-right"><span class="align-left margin-span__blog"><svg
+                        <i class="maintext align-right"><span class="align-left margin-span__blog"><svg
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="8.819mm" height="7.056mm">
                                     <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="72px"
@@ -282,9 +282,9 @@
 
                     <!-- BEGIN post__info -->
                     <div class="post__info">
-                        <h2 class="font-bebas text-m color-orange">SOME OF THE BEST FREEBIES ON THE WEB</h2>
-                        <p class="post__metap color-lightgray text-xs">www.bestpsdfreebies.com</p>
-                        <p class="text-xs color-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                        <h2 class="maintitle">SOME OF THE BEST FREEBIES ON THE WEB</h2>
+                        <p class="post__metap">www.bestpsdfreebies.com</p>
+                        <p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
                             at
                             aperiam magni
                             facere.
@@ -302,11 +302,11 @@
             <!-- END post -->
 
             <!-- BEGIN pagination-bar -->
-            <div class="filter-bar pagination-bar text-m font-bebas">
+            <nav class="filter-bar pagination-bar">
                 <a href="#" class="is-active">1</a>
                 <a href="#" class="">2</a>
                 <a href="#" class="">3</a>
-            </div>
+            </nav>
             <!-- END pagination-bar -->
 
         </div>
@@ -320,12 +320,12 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <p class="side__title font-bebas color-orange text-m">ABOUT JETRO</p>
+                    <p class="side__title maintitle">ABOUT JETRO</p>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
 
-                <p class="text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim,
+                <p class="maintext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim,
                     veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
@@ -342,18 +342,20 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <p class="side__title font-bebas color-orange text-m">CATEGORIES</p>
+                    <p class="side__title maintitle">CATEGORIES</p>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
-                <p class="text-xs color-gray">
-                    Video(3)
-                    <br>Sport(5)
-                    <br>Media(2)
-                    <br>Entertainment(7)
-                    <br>Life(4)
-                    <br>Super Cool Stuff(8)
-                </p>
+                <!-- BEGIN category-block -->
+                <div class="category-block">
+                    <a href="#" class="">Video(3)</a>
+                    <a href="#" class="">Sport(5)</a>
+                    <a href="#" class="">Media(2)</a>
+                    <a href="#" class="">Entertainment(7)</a>
+                    <a href="#" class="">Life(4)</a>
+                    <a href="#" class="">Super Cool Stuff(8)</a>
+                </div>
+                <!-- END category-block -->
             </div>
             <!-- END page-container__sideblock -->
 
@@ -362,21 +364,21 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <p class="side__title font-bebas color-orange text-m">PHOTO GALLERY</p>
+                    <p class="side__title maintitle">PHOTO GALLERY</p>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
 
                 <!-- BEGIN min-gallery -->
                 <div class="min-gallery grid-layout">
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
                 </div>
                 <!-- END min-gallery -->
             </div>

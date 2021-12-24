@@ -2,7 +2,7 @@
 <!-- BEGIN container -->
 <div class="container align-center">
     <div class="stripe stripe__page bg-color-orange">
-        <h1 class="text-l font-bebas color-white padding_title">ABOUT US</h1>
+        <h1 class="pagetitle">ABOUT US</h1>
     </div>
     
     <!-- BEGIN page-container -->
@@ -10,7 +10,7 @@
 
         <!-- BEGIN page-container__main -->
         <div class="page-container__main">
-            <p class="text-xs color-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at aperiam magni
+            <p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at aperiam magni
                 facere.
                 Mollitia laudantium rerum quasi corporis iure totam molestiae expedita, quibusdam magni, accusamus illo
                 doloremque natus molestias tempore!
@@ -18,7 +18,7 @@
                 quisquam, explicabo exercitationem consequuntur mollitia nesciunt voluptatum quis perferendis nihil
                 numquam optio perspiciatis excepturi. Id, voluptas.
             </p>
-            <p class="text-xs color-gray align-right"><img class="about__img align-left margin-right_about"
+            <p class="maintext align-right"><img class="about__img align-left margin-right_about"
                     src="<?php bloginfo('template_url'); ?>/images/mike.png" />
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eum, dolores optio explicabo ipsum
                 fugiat placeat aspernatur fugit maxime reprehenderit voluptas! Harum omnis quam quisquam totam expedita
@@ -38,7 +38,7 @@
                 reiciendis iusto.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, neque.
             </p>
-            <p class="text-xs color-gray">
+            <p class="maintext">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eum, dolores optio explicabo ipsum
                 fugiat placeat aspernatur fugit maxime reprehenderit voluptas! Harum omnis quam quisquam totam expedita
                 fuga sunt provident.
@@ -49,7 +49,7 @@
                 possimus nulla repudiandae officia molestiae soluta beatae in repellat distinctio officiis dolore
                 pariatur iste sed. Autem.
             </p>
-            <p class="text-xs color-gray">
+            <p class="maintext">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquam quis ad adipisci nam! Fugit,
                 unde dignissimos. Eligendi libero rerum totam facere at vitae corrupti, enim, iusto maxime reprehenderit
                 natus.
@@ -60,7 +60,7 @@
                 possimus nulla repudiandae officia molestiae soluta beatae in repellat distinctio officiis dolore
                 pariatur iste sed. Autem.
             </p>
-            <p class="text-xs color-gray align-right margin-bottom">
+            <p class="maintext align-right margin-bottom">
                 <svg class="about__svg align-left margin-right_about" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="8.467mm" height="8.930mm">
                     <text kerning="auto" font-family="Bebas Neue" fill="rgb(0, 0, 0)" font-size="36px" x="0px" y="34px">
@@ -80,7 +80,7 @@
 
             <!-- BEGIN about__quote -->
             <div class="about__quote">
-                <i class="text-xs color-gray align-right">
+                <i class="maintext align-right">
                     <svg class="align-left margin-right_about" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="2.822mm" height="27.869mm">
                         <path fill-rule="evenodd" fill="rgb(232, 102, 60)"
@@ -100,7 +100,7 @@
 
             <!-- BEGIN block -->
             <div class="block flex-layout flex-layout--nowrap">
-                <p class="text-xs color-gray align-left margin-right_about">Lorem ipsum dolor sit, amet consectetur
+                <p class="maintext align-left margin-right_about">Lorem ipsum dolor sit, amet consectetur
                     adipisicing elit. Temporibus
                     enim, veniam minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam
                     maxime ipsum eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
@@ -108,7 +108,7 @@
                     voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
                     minus asperiores. Placeat!
                 </p>
-                <p class="text-xs color-gray align-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                <p class="maintext align-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Temporibus
                     enim, veniam minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam
                     maxime ipsum eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
@@ -121,7 +121,7 @@
 
             <!-- BEGIN block -->
             <div class="block flex-layout flex-layout--nowrap">
-                <p class="about__p text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                <p class="about__p maintext">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Temporibus enim, veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
@@ -129,7 +129,7 @@
                     voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
                     minus asperiores. Placeat!
                 </p>
-                <p class="about__p text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                <p class="about__p maintext">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Temporibus enim, veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
@@ -137,7 +137,7 @@
                     voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
                     minus asperiores. Placeat!
                 </p>
-                <p class="about__p text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                <p class="about__p maintext">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Temporibus enim, veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
@@ -158,12 +158,12 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                <p class="side__title font-bebas color-orange text-m">ABOUT JETRO</p>
+                    <p class="side__title maintitle">ABOUT JETRO</p>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
 
-                <p class="text-xs color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim,
+                <p class="maintext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus enim,
                     veniam
                     minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
                     eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
@@ -180,18 +180,20 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                <p class="side__title font-bebas color-orange text-m">CATEGORIES</p>
+                    <p class="side__title maintitle">CATEGORIES</p>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
-                <p class="text-xs color-gray">
-                    Video(3)
-                    <br>Sport(5)
-                    <br>Media(2)
-                    <br>Entertainment(7)
-                    <br>Life(4)
-                    <br>Super Cool Stuff(8)
-                </p>
+                <!-- BEGIN category-block -->
+                <div class="category-block">
+                    <a href="#" class="">Video(3)</a>
+                    <a href="#" class="">Sport(5)</a>
+                    <a href="#" class="">Media(2)</a>
+                    <a href="#" class="">Entertainment(7)</a>
+                    <a href="#" class="">Life(4)</a>
+                    <a href="#" class="">Super Cool Stuff(8)</a>
+                </div>
+                <!-- END category-block -->
             </div>
             <!-- END page-container__sideblock -->
 
@@ -200,21 +202,21 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <p class="side__title font-bebas color-orange text-m">PHOTO GALLERY</p>
+                    <p class="side__title maintitle">PHOTO GALLERY</p>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
 
                 <!-- BEGIN min-gallery -->
                 <div class="min-gallery grid-layout">
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
-                    <img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" />
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
+                    <a href="#"><img class="sq" src="<?php bloginfo('template_url'); ?>/images/square.png" /></a>
                 </div>
                 <!-- END min-gallery -->
             </div>

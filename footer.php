@@ -4,7 +4,7 @@
 
 		<!-- BEGIN footer__col -->
 		<div class="footer__col">
-			<h2 class="footer__title font-bebas text-m color-white">ABOUT JETRO</h2>
+			<h2 class="footer__title maintitle maintitle--white">ABOUT JETRO</h2>
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ipsam asperiores, atque iure
 				consequatur neque distinctio aliquid. Incidunt molestias illo praesentium! Ab maiores debitis placeat
 				quis sequi commodi explicabo sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -16,7 +16,7 @@
 
 		<!-- BEGIN footer__col -->
 		<div class="footer__col">
-			<h2 class="footer__title font-bebas text-m color-white">TWITTER WIDGET</h2>
+			<h2 class="footer__title maintitle maintitle--white">TWITTER WIDGET</h2>
 			<p><span class="footer__twit">@firstdude</span> What an awesome design with great functionality!:)</p>
 			<p><span class="footer__twit">@seconddude</span> What an awesome design with great functionality!:)
 				<br><span class="footer__twit">about 2 hours ago</span></p>
@@ -26,7 +26,7 @@
 
 		<!-- BEGIN footer__col -->
 		<div class="footer__col">
-			<h2 class="footer__title font-bebas text-m color-white">CONTACT US</h2>
+			<h2 class="footer__title maintitle maintitle--white">CONTACT US</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur molestias obcaecati cum eum
 				laudantium fugit repudiandae reprehenderit nihil est ea doloremque corrupti qui, enim, natus cupiditate
 				deleniti culpa ratione!</p>

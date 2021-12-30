@@ -12,3 +12,15 @@ function enqueue_scripts () {
 	wp_enqueue_script('html5-shim');
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
+
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
+');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
+}
+
+add_theme_support('post-thumbnails');
+add_theme_support('post-thumbnails', array('card'));

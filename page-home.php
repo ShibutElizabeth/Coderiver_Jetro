@@ -1,7 +1,12 @@
 <?php get_header(); ?>
+<?php 
+
+/* Template Name: Home */
+
+?>
 <!-- BEGIN container -->
 <div class="container align-center margin-top">
-    
+
     <!-- BEGIN slider -->
     <div class="slider block">
         <?php echo do_shortcode('[URIS id=55]'); ?>
@@ -11,57 +16,43 @@
     <!-- BEGIN services -->
     <div class="services flex-layout">
 
+        <?php 
+           
+           $posts = get_posts( array(
+               'numberposts' => -1,
+               'category' => 0,
+               'orderby' => 'date',
+               'order' => 'ASC',
+               'include' => array(),
+               'exclude' => array(),
+               'meta_key' => '',
+               'meta_value' => '',
+               'post_type' => 'service',
+               'suppress_filters' => true,
+           ));
+
+           foreach($posts as $post){
+               setup_postdata($post);
+               $icon = get_post_meta($post->ID, 'service_icon', true );
+               
+               ?>
+        <?= console_log($icon); ?>
         <!-- BEGIN service -->
         <div class="service">
-
             <!-- BEGIN service__hat -->
             <div class="service__hat flex-layout">
-                <img class="service__img" src="<?php bloginfo('template_url'); ?>/images/icon1.png" />
-                <h2 class="service__title maintitle">CHECK OUT MY LATEST PORTFOLIO</h2>
+                <img class="service__img" src="<?php echo $icon['guid'] ?>" />
+                <h2 class="service__title maintitle"><?php the_title(); ?></h2>
             </div>
             <!-- END service__hat -->
-            <p class="service__description">Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Eius dolor,
-                architecto dolorem aspernatur maxime incidunt exercitationem temporibus ducimus quibusdam sit iusto quae
-                distinctio commodi! Ipsum qui repudiandae ut labore quasi!</p>
+            <p class="service__description"><?php echo get_post_meta(get_the_ID(), 'service_description', true); ?></p>
             <button class="button">MORE</button>
         </div>
         <!-- END service -->
 
-        <!-- BEGIN service -->
-        <div class="service">
-
-            <!-- BEGIN service__hat -->
-            <div class="service__hat flex-layout">
-                <img class="service__img" src="<?php bloginfo('template_url'); ?>/images/icon2.png" />
-                <h2 class="service__title maintitle">OFFER TOP NOTCH QUALITY WORK & SERVICES</h2>
-            </div>
-            <!-- END service__hat -->
-            <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Tempora debitis
-                eligendi nam facilis odio quam voluptates, laboriosam dolorem ut repellat fuga, quaerat doloribus illum,
-                possimus enim. Quam nisi sapiente esse!</p>
-            <button class="button">MORE</button>
-        </div>
-        <!-- END service -->
-
-        <!-- BEGIN service -->
-        <div class="service">
-
-            <!-- BEGIN service__hat -->
-            <div class="service__hat flex-layout">
-                <img class="service__img" src="<?php bloginfo('template_url'); ?>/images/icon3.png" />
-                <h2 class="service__title maintitle">FOLLOW ME ON TWITTER, FACEBOOK & PINTEREST
-                </h2>
-            </div>
-            <!-- END service__hat -->
-            <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Incidunt qui sunt,
-                accusantium dolorum labore possimus voluptate velit a necessitatibus ea natus reiciendis quod
-                repellendus autem nostrum ex exercitationem nobis! Molestias.</p>
-            <button class="button">MORE</button>
-        </div>
-        <!-- END service -->
+        <?php
+           }
+        ?>
     </div>
     <!-- END services -->
 
@@ -77,67 +68,59 @@
 
         <!-- BEGIN gallery -->
         <div class="gallery flex-layout">
+            <?php 
+           
+           $posts = get_posts( array(
+               'numberposts' => 4,
+               'category' => 0,
+               'orderby' => 'date',
+               'order' => 'DESC',
+               'include' => array(),
+               'exclude' => array(),
+               'meta_key' => '',
+               'meta_value' => '',
+               'post_type' => 'card',
+               'suppress_filters' => true,
+           ));
+
+           foreach($posts as $post){
+               setup_postdata($post);
+               $icon = get_post_meta($post->ID, 'service_icon', true );
+               
+               ?>
+            <?= console_log($icon); ?>
             <!-- BEGIN card -->
             <div class="card">
-                <img class="block" src="<?php bloginfo('template_url'); ?>/images/card1.png" />
-                
+                <!-- BEGIN portfolio__block -->
+                <div class="portfolio__block">
+                    <a href="portfolio-item"><img class="block portfolio__more"
+                            src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
+                    <img class="block portfolio__img" src="<?php echo get_the_post_thumbnail_url(); ?>" />
+                </div>
+                <!-- END portfolio__block -->
                 <!-- BEGIN card__text -->
                 <div class="card__text">
-                    <h2 class="maintitle maintitle--lightgray">CHARACTER DESIGN</h2>
-                    <p class="card__description">June 14, 2020</p>
+                    <h2 class="maintitle maintitle--lightgray"><?php the_title(); ?></h2>
+                    <p class="card__description"><?php echo get_post_meta(get_the_ID(), 'card_date', true); ?></p>
                 </div>
                 <!-- END card__text -->
             </div>
             <!-- END card -->
 
-            <!-- BEGIN card -->
-            <div class="card">
-                <img class="block" src="<?php bloginfo('template_url'); ?>/images/card2.png" />
-                
-                <!-- BEGIN card__text -->
-                <div class="card__text">
-                    <h2 class="maintitle maintitle--lightgray">BROSCHURE DESIGN</h2>
-                    <p class="card__description">June 14, 2020</p>
-                </div>
-                <!-- END card__text -->
-            </div>
-            <!-- END card -->
+            <?php
+           }
+        ?>
 
-            <!-- BEGIN card -->
-            <div class="card">
-                <img class="block" src="<?php bloginfo('template_url'); ?>/images/card3.png" />
-                
-                <!-- BEGIN card__text -->
-                <div class="card__text">
-                    <h2 class="maintitle maintitle--lightgray">SOCIAL MEDIA BUTTONS</h2>
-                    <p class="card__description">June 14, 2020</p>
-                </div>
-                <!-- END card__text -->
-            </div>
-            <!-- END card -->
-
-            <!-- BEGIN card -->
-            <div class="card">
-                <img class="block" src="<?php bloginfo('template_url'); ?>/images/card4.png" />
-
-                <!-- BEGIN card__text -->
-                <div class="card__text">
-                    <h2 class="maintitle maintitle--lightgray">10 AMAZING WEBSITES</h2>
-                    <p class="card__description">June 14, 2020</p>
-                </div>
-                <!-- END card__text -->
-            </div>
-            <!-- END card -->
         </div>
         <!-- END gallery -->
     </div>
     <!-- END block -->
 
-<section>
-    <?php if (have_posts()): while (have_posts()): the_post(); ?>
-    <?php the_content(); ?>
-    <?php endwhile; endif; ?>
-</section>
+    <section>
+        <?php if (have_posts()): while (have_posts()): the_post(); ?>
+        <?php the_content(); ?>
+        <?php endwhile; endif; ?>
+    </section>
 </div>
 <!-- END container -->
 <?php get_footer(); ?>

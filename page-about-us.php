@@ -1,152 +1,117 @@
 <?php get_header(); ?>
+<?php 
+
+/* Template Name: About Us */
+
+?>
 <!-- BEGIN container -->
 <div class="container align-center">
     <div class="stripe stripe__page bg-color-orange">
-        <h1 class="pagetitle">ABOUT US</h1>
+        <h1 class="pagetitle"><?php the_title(); ?></h1>
     </div>
-    
+
     <!-- BEGIN page-container -->
-    <div class="page-container flex-layout">
+    <div class="page-container flex-layout about">
 
         <!-- BEGIN page-container__main -->
         <div class="page-container__main">
-            <p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at aperiam magni
-                facere.
-                Mollitia laudantium rerum quasi corporis iure totam molestiae expedita, quibusdam magni, accusamus illo
-                doloremque natus molestias tempore!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis amet, at provident quam quibusdam
-                quisquam, explicabo exercitationem consequuntur mollitia nesciunt voluptatum quis perferendis nihil
-                numquam optio perspiciatis excepturi. Id, voluptas.
-            </p>
-            <p class="maintext align-right"><img class="about__img align-left margin-right_about"
-                    src="<?php bloginfo('template_url'); ?>/images/mike.png" />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eum, dolores optio explicabo ipsum
-                fugiat placeat aspernatur fugit maxime reprehenderit voluptas! Harum omnis quam quisquam totam expedita
-                fuga sunt provident.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquam quis ad adipisci nam! Fugit,
-                unde dignissimos. Eligendi libero rerum totam facere at vitae corrupti, enim, iusto maxime reprehenderit
-                natus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum corporis tempora ipsam assumenda
-                consequuntur officiis minima voluptate dolorem voluptas. Doloremque ea quidem reprehenderit voluptas,
-                minus delectus soluta a reiciendis iusto.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit voluptatum excepturi, iure, autem
-                possimus nulla repudiandae officia molestiae soluta beatae in repellat distinctio officiis dolore
-                pariatur iste sed. Autem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda modi
-                exercitationem libero rem eum doloribus ipsa quos dolorum! Velit quia, veniam placeat vitae nulla
-                reiciendis minima! Laboriosam, eos. Doloremque ea quidem reprehenderit voluptas, minus delectus soluta a
-                reiciendis iusto.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, neque.
-            </p>
-            <p class="maintext">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eum, dolores optio explicabo ipsum
-                fugiat placeat aspernatur fugit maxime reprehenderit voluptas! Harum omnis quam quisquam totam expedita
-                fuga sunt provident.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquam quis ad adipisci nam! Fugit,
-                unde dignissimos. Eligendi libero rerum totam facere at vitae corrupti, enim, iusto maxime reprehenderit
-                natus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit voluptatum excepturi, iure, autem
-                possimus nulla repudiandae officia molestiae soluta beatae in repellat distinctio officiis dolore
-                pariatur iste sed. Autem.
-            </p>
-            <p class="maintext">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquam quis ad adipisci nam! Fugit,
-                unde dignissimos. Eligendi libero rerum totam facere at vitae corrupti, enim, iusto maxime reprehenderit
-                natus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum corporis tempora ipsam assumenda
-                consequuntur officiis minima voluptate dolorem voluptas. Doloremque ea quidem reprehenderit voluptas,
-                minus delectus soluta a reiciendis iusto.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit voluptatum excepturi, iure, autem
-                possimus nulla repudiandae officia molestiae soluta beatae in repellat distinctio officiis dolore
-                pariatur iste sed. Autem.
-            </p>
-            <p class="maintext align-right margin-bottom">
-                <svg class="about__svg align-left margin-right_about" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="8.467mm" height="8.930mm">
-                    <text kerning="auto" font-family="Bebas Neue" fill="rgb(0, 0, 0)" font-size="36px" x="0px" y="34px">
-                        <tspan font-size="36px" font-family="HelveticaNeue" font-weight="bold" fill="#E8603C">D</tspan>
-                    </text>
-                </svg>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquam quis ad adipisci nam! Fugit,
-                unde dignissimos. Eligendi libero rerum totam facere at vitae corrupti, enim, iusto maxime reprehenderit
-                natus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum corporis tempora ipsam assumenda
-                consequuntur officiis minima voluptate dolorem voluptas. Doloremque ea quidem reprehenderit voluptas,
-                minus delectus soluta a reiciendis iusto.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit voluptatum excepturi, iure, autem
-                possimus nulla repudiandae officia molestiae soluta beatae in repellat distinctio officiis dolore
-                pariatur iste sed. Autem.
-            </p>
+
+            <?php 
+           
+           $posts = get_posts( array(
+               'numberposts' => -1,
+               'category' => 0,
+               'orderby' => 'date',
+               'order' => 'ASC',
+               'include' => array(),
+               'exclude' => array(),
+               'meta_key' => '',
+               'meta_value' => '',
+               'post_type' => 'about-text',
+               'suppress_filters' => true,
+           ));
+
+           foreach($posts as $post){
+               setup_postdata($post);
+               $paragraph = get_post_meta($post->ID, 'paragraph', true );
+               $col1 = get_post_meta($post->ID, 'col-1', true );
+               $col2 = get_post_meta($post->ID, 'col-2', true );
+               $col3 = get_post_meta($post->ID, 'col-3', true );
+               $quote = get_post_meta($post->ID, 'quote', true );
+               $media = get_post_meta($post->ID, 'text-media', true );
+               $letter = get_post_meta($post->ID, 'letter', true );
+               $pos = get_post_meta($post->ID, 'media_position', true );
+               
+               ?>
+            <?= console_log($pos); ?>
+            <?php if($paragraph){
+                        if($media){
+                    ?>
+
+            <div class="paragraphs align-right">
+                <img class="about__img align-left margin-right_about" src="<?php echo $media['guid'] ?>" />
+                <?php echo $paragraph ?>
+            </div>
+
+            <?php } 
+                    else if($letter){ ?>
+            <div class="paragraphs flex-layout flex-layout--nowrap">
+                <div class="align-right">
+                    <svg class="about__svg align-left margin-right_about" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="8.467mm" height="8.930mm">
+                        <text kerning="auto" font-family="Bebas Neue" fill="rgb(0, 0, 0)" font-size="36px" x="0px"
+                            y="34px">
+                            <tspan font-size="36px" font-family="HelveticaNeue" font-weight="bold" fill="#E8603C">
+                                <?php echo $letter?></tspan>
+                        </text>
+                    </svg>
+                    <?php echo $paragraph ?>
+                </div>
+            </div>
+            <?php } 
+                    else{ ?>
+            <div class="paragraphs">
+                <?php echo $paragraph ?>
+            </div>
+            <?php }
+                    
+                    }
+                     else if($quote){ ?>
 
             <!-- BEGIN about__quote -->
-            <div class="about__quote">
+            <div class="paragraphs about__quote flex-layout flex-layout--nowrap">
+                <div class="about__quote-stripe align-left margin-right_about"></div>
                 <i class="maintext align-right">
-                    <svg class="align-left margin-right_about" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" width="2.822mm" height="27.869mm">
-                        <path fill-rule="evenodd" fill="rgb(232, 102, 60)"
-                            d="M0.000,0.000 L8.000,0.000 L8.000,79.000 L0.000,79.000 L0.000,0.000 Z" />
-                    </svg>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maiores consequatur eveniet,
-                    doloremque voluptatem omnis vero unde id animi iste voluptas possimus distinctio exercitationem
-                    incidunt ad corporis repellendus, vitae culpa!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ab? Dicta sint quod quasi obcaecati.
-                    Rerum quod accusantium odio veniam excepturi natus maxime, voluptas at ex magnam voluptate alias
-                    sed!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, perspiciatis reprehenderit totam
-                    quidem quas voluptatibus voluptates!
+                    <?php echo $quote?>
                 </i>
             </div>
             <!-- END about__quote -->
 
+            <?php } 
+                    else if($col1){?>
             <!-- BEGIN block -->
-            <div class="block flex-layout flex-layout--nowrap">
-                <p class="maintext align-left margin-right_about">Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Temporibus
-                    enim, veniam minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam
-                    maxime ipsum eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
-                    voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
-                    minus asperiores. Placeat!
-                </p>
-                <p class="maintext align-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Temporibus
-                    enim, veniam minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam
-                    maxime ipsum eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
-                    voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
-                    minus asperiores. Placeat!
-                </p>
-            </div>
-            <!-- END block -->
+            <div class="paragraphs block flex-layout flex-layout--nowrap">
 
-            <!-- BEGIN block -->
-            <div class="block flex-layout flex-layout--nowrap">
-                <p class="about__p maintext">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Temporibus enim, veniam
-                    minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
-                    eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
-                    voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
-                    minus asperiores. Placeat!
-                </p>
-                <p class="about__p maintext">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Temporibus enim, veniam
-                    minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
-                    eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
-                    voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
-                    minus asperiores. Placeat!
-                </p>
-                <p class="about__p maintext">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Temporibus enim, veniam
-                    minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime ipsum
-                    eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus obcaecati cumque quod cum
-                    voluptatem sapiente voluptas veniam hic esse incidunt, amet aliquid officiis dolor quam quia vitae
-                    minus asperiores. Placeat!
-                </p>
+                <?php if($col2 && !$col3){   ?>
+                <div class="align-left margin-right_about"><?php echo $col1 ?></div>
+                <div class="align-right"><?php echo $col2 ?></div>
+                <?php }
+                        else if($col2 && $col3){ ?>
+                <div class="about__p"><?php echo $col1 ?>
+                </div>
+                <div class="about__p"><?php echo $col2 ?>
+                </div>
+                <div class="about__p"><?php echo $col3 ?>
+                </div>
+
+                <?php }?>
             </div>
             <!-- END block -->
+            <?php  
+                 
+           }
+        }
+        ?>
         </div>
         <!-- END page-container__main -->
 
@@ -158,7 +123,7 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <p class="side__title maintitle">ABOUT JETRO</p>
+                    <h2 class="side__title maintitle">ABOUT JETRO</h2>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
@@ -180,7 +145,7 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <p class="side__title maintitle">CATEGORIES</p>
+                    <h2 class="side__title maintitle">CATEGORIES</h2>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
@@ -202,7 +167,7 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <p class="side__title maintitle">PHOTO GALLERY</p>
+                    <h2 class="side__title maintitle">PHOTO GALLERY</h2>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->

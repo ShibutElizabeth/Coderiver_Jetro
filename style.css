@@ -386,8 +386,19 @@ footer {
 }
 
 /* about block */
+.about .paragraphs{
+	margin-bottom: 25px;
+}
+.paragraphs p{
+	margin-bottom: 10px;
+}
+.about p{
+	font-size: 12px;
+	color: #3a3a3a;
+	margin: 0;
+}
 .about__img{
-	width: 33%;
+	max-width: 50%;
 	height: auto;
 	border: 1px solid #979797;
 	padding: 2px;
@@ -396,8 +407,14 @@ footer {
 	margin-top: -5px;
 	margin-right: 0;
 }
+.about__quote-stripe{
+	width: 30px;
+    height: auto;
+    margin-left: 50px;
+    background-color: #e8663c;
+}
 .about__quote{
-	margin-left: 50px;
+	width: 100%;
 }
 .about__p{
 	max-width: 31%;
@@ -614,6 +631,10 @@ textarea::-moz-placeholder {
 	max-width: 70px;
 	padding: 7px 15px;
 	border: none;
+	font-size: 16px;
+	color: #fff;
+	background-color: #e8663c;
+	font-family: "Bebas Neue";
 }
 .button:hover{
 	cursor: pointer;

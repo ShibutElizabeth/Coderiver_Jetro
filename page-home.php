@@ -9,7 +9,30 @@
 
     <!-- BEGIN slider -->
     <div class="slider block">
-        <?php echo do_shortcode('[URIS id=55]'); ?>
+    <?php 
+           
+           $posts = get_posts( array(
+               'numberposts' => 2,
+               'category' => 0,
+               'orderby' => 'date',
+               'order' => 'DESC',
+               'include' => array(),
+               'exclude' => array(),
+               'meta_key' => '',
+               'meta_value' => '',
+               'post_type' => 'media',
+               'suppress_filters' => true,
+           ));
+
+           foreach($posts as $post){
+               setup_postdata($post);
+               
+               
+               ?>
+
+<?php echo get_post_meta($post->ID, 'slider', true ); ?>
+            <?php }?>
+            
     </div>
     <!-- END slider -->
 
@@ -45,7 +68,7 @@
                 <h2 class="service__title maintitle"><?php the_title(); ?></h2>
             </div>
             <!-- END service__hat -->
-            <p class="service__description"><?php echo get_post_meta(get_the_ID(), 'service_description', true); ?></p>
+            <?php echo get_post_meta(get_the_ID(), 'service_description', true); ?>
             <button class="button">MORE</button>
         </div>
         <!-- END service -->

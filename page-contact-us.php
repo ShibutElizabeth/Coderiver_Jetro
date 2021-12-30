@@ -1,55 +1,84 @@
 <?php get_header(); ?>
+<?php 
+
+/* Template Name: Contact Us */
+
+?>
 <!-- BEGIN container -->
 <div class="container align-center">
     <div class="stripe stripe__page bg-color-orange">
-        <h1 class="pagetitle">CONTACT US</h1>
+        <h1 class="pagetitle"><?php the_title(); ?></h1>
     </div>
-    
+
     <!-- BEGIN page-container -->
     <div class="page-container flex-layout">
 
         <!-- BEGIN page-container__main -->
-        <div class="page-container__main page-container__main--contact">
-            <img class="map" src="<?php bloginfo('template_url'); ?>/images/map.png" />
+        <div class="contact page-container__main page-container__main--contact">
+            <?php 
+           
+           $medias = get_posts( array(
+               'numberposts' => 1,
+               'category' => 0,
+               'orderby' => 'date',
+               'order' => 'ASC',
+               'include' => array(),
+               'exclude' => array(),
+               'meta_key' => '',
+               'meta_value' => '',
+               'post_type' => 'media',
+               'suppress_filters' => true,
+           ));
 
+           foreach($medias as $media){
+               setup_postdata($media);
+               
+               $map = get_post_meta($media->ID, 'map', true );
+               
+               ?>
+
+            <?php echo $map ?>
             <!-- BEGIN flex -->
             <div class="flex-layout flex-layout--nowrap flex-layout--contact">
-
                 <!-- BEGIN contact__textblock -->
                 <div class="contact__textblock">
-                    <p class="maintext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
-                        enim,
-                        veniam
-                        minima accusantium dolore molestias exercitationem cupiditate hic provident quisquam maxime
-                        ipsum
-                        eveniet, dolor, laboriosam autem ullam! Quaerat, iste aliquam!
-                    </p>
-                    <p class="maintext"><b><span class="color-orange">Best PSD Freebies</span></b>
-                        <br>328 Ave C
-                        <br>Saskatoon, SK
-                        <br>S7R 2V9
-                    </p>
-                    <p class="maintext">
-                        <b>t:</b> (888)222-4444
-                        <br><b>f:</b> (888)222-4444
-                        <br><b>e:</b> psd@freebies.com
-                    </p>
+                
+            <?php }
+            $posts = get_posts( array(
+                'numberposts' => -1,
+                'category' => 0,
+                'orderby' => 'date',
+                'order' => 'ASC',
+                'include' => array(),
+                'exclude' => array(),
+                'meta_key' => '',
+                'meta_value' => '',
+                'post_type' => 'contact',
+                'suppress_filters' => true,
+            ));
+            foreach($posts as $post){
+                setup_postdata($post);
+                $title = get_post_meta($post->ID, 'info_title', true );
+                $info = get_post_meta($post->ID, 'info', true );
+            
+            ?>
+            <div class="paragraphs">
+            <h3 class="contact__title"><?php echo $title ?></h3>
+            <?php echo $info ?>
+            </div>
+            <?php } ?>
+
                 </div>
                 <!-- END contact__textblock -->
-                
+
                 <!-- BEGIN contact__formblock -->
                 <div class="contact__formblock margin-top--plus">
                     <form class="contact__form">
-                        <input type="text" placeholder="FIRSTNAME"
-                            class="contact__input" />
-                        <input type="text" placeholder="LASTNAME"
-                            class="contact__input" />
-                        <input type="text" placeholder="EMAIL"
-                            class="contact__input" />
-                        <textarea type="text" placeholder="MESSAGE"
-                            class="contact__input"></textarea>
-                        <input type="button" class="button align-left"
-                            value="submit" />
+                        <input type="text" placeholder="FIRSTNAME" class="contact__input" />
+                        <input type="text" placeholder="LASTNAME" class="contact__input" />
+                        <input type="text" placeholder="EMAIL" class="contact__input" />
+                        <textarea type="text" placeholder="MESSAGE" class="contact__input"></textarea>
+                        <input type="button" class="button align-left" value="submit" />
                     </form>
                 </div>
                 <!-- END contact__formblock -->
@@ -66,7 +95,7 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <p class="side__title maintitle">ABOUT JETRO</p>
+                    <h2 class="side__title maintitle">ABOUT JETRO</h2>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
@@ -88,7 +117,7 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <p class="side__title maintitle">CATEGORIES</p>
+                    <h2 class="side__title maintitle">CATEGORIES</h2>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
@@ -110,7 +139,7 @@
 
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <p class="side__title maintitle">PHOTO GALLERY</p>
+                    <h2 class="side__title maintitle">PHOTO GALLERY</h2>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->

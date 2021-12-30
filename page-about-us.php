@@ -14,7 +14,7 @@
     <div class="page-container flex-layout about">
 
         <!-- BEGIN page-container__main -->
-        <div class="page-container__main">
+        <div class="about page-container__main">
 
             <?php 
            
@@ -117,7 +117,69 @@
 
         <!-- BEGIN page-container__side -->
         <div class="page-container__side">
+            <?php 
+           
+           $posts = get_posts( array(
+               'numberposts' => -1,
+               'category' => 0,
+               'orderby' => 'date',
+               'order' => 'ASC',
+               'include' => array(),
+               'exclude' => array(),
+               'meta_key' => '',
+               'meta_value' => '',
+               'post_type' => 'side-block',
+               'suppress_filters' => true,
+           ));
 
+           foreach($posts as $post){
+               setup_postdata($post);
+               $paragraph = get_post_meta($post->ID, 'side_text', true );
+               $list = get_post_meta($post->ID, 'side_list', true );
+               
+               ?>
+            <!-- BEGIN page-container__sideblock -->
+            <div class="page-container__sideblock">
+
+                <!-- BEGIN dashed-title -->
+                <div class="dashed-title flex-layout flex-layout--nowrap">
+                    <h2 class="side__title maintitle"><?php the_title();?></h2>
+                    <div class="dashed"></div>
+                </div>
+                <!-- END dashed-title -->
+
+
+                <?php if($paragraph){
+                        
+                    ?>
+                <div class="paragraphs">
+                    <?php echo $paragraph ?>
+                </div>
+                <?php }
+                    
+                     else if($list){ ?>
+
+                <!-- BEGIN category-block -->
+                <div class="category-block">
+                    <a href="#" class="">Video(3)</a>
+                    <a href="#" class="">Sport(5)</a>
+                    <a href="#" class="">Media(2)</a>
+                    <a href="#" class="">Entertainment(7)</a>
+                    <a href="#" class="">Life(4)</a>
+                    <a href="#" class="">Super Cool Stuff(8)</a>
+                </div>
+                <!-- END category-block -->
+                <?php } 
+                    ?>
+
+            </div>
+            <!-- END page-container__sideblock -->
+
+            <?php  
+                 
+           }
+        
+        ?>
             <!-- BEGIN page-container__sideblock -->
             <div class="page-container__sideblock">
 

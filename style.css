@@ -136,7 +136,7 @@ body {
 }
 .margin-span__blog{
 	margin-right: 15px;
-	margin-top: -5px;
+	margin-top: 5px;
 }
 .padding_title{
 	padding: 15px 10px;
@@ -327,7 +327,12 @@ footer {
 	font-size: 12px;
 	color: #3a3a3a;
 }
-
+.blog p{
+	font-size: 12px;
+	color: #3a3a3a;
+	margin: 0;
+	margin-top: 10px;
+}
 /* services block */
 .services{
 	padding-top: 20px;
@@ -350,7 +355,8 @@ footer {
     max-width: 245px;
     padding-left: 20px;
 }
-.service__description{
+
+.service p{
 	color: #b9b9b9;
 	font-size: 16px;
 	font-weight: 300;
@@ -456,7 +462,7 @@ footer {
 }
 .contact__textblock{
 	width: 25%;
-	margin-top: 20px;
+	margin-top: 28px;
 }
 .contact__formblock{
 	width: 65%;
@@ -474,6 +480,22 @@ footer {
 	font-family: "Bebas Neue";
 	font-size: 18px;
 	font-weight: 600;
+}
+.contact .paragraphs{
+	margin-bottom: 15px;
+}
+.contact p, a{
+	font-size: 12px;
+	color: #3a3a3a;
+	margin: 0;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+.contact__title{
+	font-size: 12px;
+	color: #e8663c;
+	margin: 0;
+	font-style: bold;
 }
 input[type=text], textarea{
 	border: 1px solid #e8663c;
@@ -523,8 +545,8 @@ textarea::-moz-placeholder {
 .post__svg{
 	position: absolute;
 	margin: auto;
-	top: 10%; 
-	left: 10%;
+	top: 0; 
+	left: 0;
 	bottom: 0; 
 	right: 0;
 }
@@ -541,23 +563,29 @@ textarea::-moz-placeholder {
 .post__info{
 	width:95%;
 }
+.post__info a{
+	text-decoration: none;
+	margin: 0;
+	color: #b9b9b9;
+	font-size: 12px;
+}
 .post__quote{
 	margin: 0 5% 0 0;
-	padding: 20px 40px 55px 40px;
+    padding: 15px 40px 20px 40px;
 }
 .post__metadata{
-	margin-top: 16px;
+	margin-top: 30px;
 	width: 25%;
 	line-height: 15px;
 }
-.post__metap{
-	padding: 0 0 10px 0;
+.post__metadata p{
+	padding: 5px 0 15px 0;
 	margin: 0;
 	color: #b9b9b9;
 	font-size: 12px;
 }
 .post__metatitle{
-	margin: 15px 0 5px 0;
+	margin: 20px 0 5px 0;
 	font-size: 16px;
 	font-weight: bold;
 	color:#e8663c;

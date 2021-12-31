@@ -134,6 +134,9 @@ body {
 .margin-right_about{
 	margin-right: 25px;
 }
+.margin-left_about{
+	margin-left: 25px;
+}
 .margin-span__blog{
 	margin-right: 15px;
 	margin-top: 5px;
@@ -304,8 +307,22 @@ footer {
 	height: fit-content;
 	background-color: transparent;
 }
+.page-container__side p{
+	color: #3a3a3a;
+	font-size: 12px;
+	margin: 0;
+}
+.page-container__side a{
+	color: #3a3a3a;
+	font-size: 12px;
+	text-decoration: none;
+	margin: 0;
+}
 .page-container__sideblock{
 	margin-bottom: 35px;
+}
+.dashed-title{
+	margin: 0 0 15px 0;
 }
 .side__title{
 	min-width: fit-content;

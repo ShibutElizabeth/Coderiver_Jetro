@@ -9,30 +9,7 @@
 
     <!-- BEGIN slider -->
     <div class="slider block">
-    <?php 
-           
-           $posts = get_posts( array(
-               'numberposts' => 2,
-               'category' => 0,
-               'orderby' => 'date',
-               'order' => 'DESC',
-               'include' => array(),
-               'exclude' => array(),
-               'meta_key' => '',
-               'meta_value' => '',
-               'post_type' => 'media',
-               'suppress_filters' => true,
-           ));
-
-           foreach($posts as $post){
-               setup_postdata($post);
-               
-               
-               ?>
-
-<?php echo get_post_meta($post->ID, 'slider', true ); ?>
-            <?php }?>
-            
+    <?php echo do_shortcode('[URIS id=55]'); ?>        
     </div>
     <!-- END slider -->
 

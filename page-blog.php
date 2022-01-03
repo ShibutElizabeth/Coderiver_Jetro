@@ -42,7 +42,7 @@
                $post_url = get_post_meta($post->ID, 'post_url', true );
                $post_idp = get_post_meta($post->ID, 'posst_id', false );
                
-               ?>
+            ?>
             <!-- BEGIN post -->
             <div class="post grid-layout grid-layout__post">
 
@@ -95,7 +95,7 @@
                     </div>
                     <!-- END slider -->
                     <?php }
-                        if($post_media){ ?>
+                        else if($post_media){ ?>
                     <div class="block">
                         <img class="post__media" src="<?php echo $post_media['guid'] ?>" />
                     </div>

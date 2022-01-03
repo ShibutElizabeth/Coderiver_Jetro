@@ -15,35 +15,13 @@
 
         <!-- BEGIN page-container__main -->
         <div class="contact page-container__main page-container__main--contact">
-            <?php 
-           
-           $medias = get_posts( array(
-               'numberposts' => 1,
-               'category' => 0,
-               'orderby' => 'date',
-               'order' => 'ASC',
-               'include' => array(),
-               'exclude' => array(),
-               'meta_key' => '',
-               'meta_value' => '',
-               'post_type' => 'media',
-               'suppress_filters' => true,
-           ));
-
-           foreach($medias as $media){
-               setup_postdata($media);
-               
-               $media_map = get_post_meta($media->ID, 'map', true );
-               
-               ?>
-
-            <?php echo $media_map ?>
+            <?php echo do_shortcode('[wpgmza id="1"]'); ?>  
             <!-- BEGIN flex -->
             <div class="flex-layout flex-layout--nowrap flex-layout--contact">
                 <!-- BEGIN contact__textblock -->
                 <div class="contact__textblock">
                 
-            <?php }
+            <?php
             $posts = get_posts( array(
                 'numberposts' => -1,
                 'category' => 0,

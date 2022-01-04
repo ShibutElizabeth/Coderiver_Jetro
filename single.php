@@ -6,9 +6,10 @@
 ?>
 <!-- BEGIN container -->
 <div class="container align-center">
-<div class="stripe stripe__page bg-color-orange">
+    <div class="stripe stripe--page bg-color-orange">
         <h1 class="pagetitle"><?php the_title(); ?></h1>
     </div>
+
     <!-- BEGIN block -->
     <div class="blog block">
         <img class="item__img post__media" src="<?php echo get_the_post_thumbnail_url(); ?>" />
@@ -28,8 +29,7 @@
 
         <!-- BEGIN gallery -->
         <div class="gallery flex-layout">
-        <?php 
-           
+        <?php    
            $posts = get_posts( array(
                'numberposts' => 4,
                'category' => 0,
@@ -45,11 +45,12 @@
 
            foreach($posts as $post){
                setup_postdata($post);
-               $icon = get_post_meta($post->ID, 'service_icon', true );
-               
-               ?>
+               $icon = get_post_meta($post->ID, 'service_icon', true );       
+        ?>
+
             <!-- BEGIN card -->
             <div class="card">
+
                 <!-- BEGIN portfolio__block -->
                 <div class="portfolio__block">
                     <a href="portfolio-item"><img class="block portfolio__more"
@@ -57,6 +58,7 @@
                     <img class="block portfolio__img" src="<?php echo get_the_post_thumbnail_url(); ?>" />
                 </div>
                 <!-- END portfolio__block -->
+
                 <!-- BEGIN card__text -->
                 <div class="card__text">
                     <h2 class="maintitle maintitle--lightgray"><?php the_title(); ?></h2>
@@ -66,14 +68,11 @@
             </div>
             <!-- END card -->
 
-            <?php
-           }
-        ?>
+            <?php } ?>
         </div>
         <!-- END gallery -->
     </div>
     <!-- END block -->
-
 </div>
 <!-- END container -->
 <?php get_footer(); ?>

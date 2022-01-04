@@ -18,7 +18,7 @@ $pg = get_body_class();
 			<a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="logo" class="logo"></a>
 
 			<!-- BEGIN header__nav -->
-			<div class="header__nav flex-layout flex-layout--nowrap align-right">
+			<div class="header__nav flex-layout flex-layout--nowrap float-right">
 				<a href="home" class="maintitle maintitle--lightgray <?php if($pg[0] == "home") echo 'is-active'?>">HOME</a>
 				<a href="about-us" class="maintitle maintitle--lightgray <?php if($pg[1] == "page-template-page-about-us") echo 'is-active'?>">ABOUT US</a>
 				<a href="blog" class="maintitle maintitle--lightgray <?php if($pg[1] == "page-template-page-blog") echo 'is-active'?>">BLOG</a>
@@ -29,6 +29,6 @@ $pg = get_body_class();
 			<!-- END header__nav -->
 			
 		</header>
-		<div class="stripe stripe__header bg-color-peach"></div>
+		<div class="stripe stripe--header bg-color-peach"></div>
 	</div>
 	<!-- END wrapper -->

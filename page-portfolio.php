@@ -5,10 +5,11 @@
 
 ?>
 <!-- BEGIN container -->
-<div class="container align-center">
-    <div class="stripe stripe__page bg-color-orange">
+<div class="container">
+    <div class="stripe stripe--page bg-color-orange">
         <h1 class="pagetitle"><?php the_title(); ?></h1>
     </div>
+
     <!-- BEGIN filter-bar -->
     <nav class="filter-bar">
         <a href="#" class="is-active ">ALL</a>
@@ -21,27 +22,27 @@
 
     <!-- BEGIN gallery -->
     <div class="flex-layout gallery">
-        <?php 
-           
-           $posts = get_posts( array(
-               'numberposts' => -1,
-               'category' => 0,
-               'orderby' => 'date',
-               'order' => 'DESC',
-               'include' => array(),
-               'exclude' => array(),
-               'meta_key' => '',
-               'meta_value' => '',
-               'post_type' => 'card',
-               'suppress_filters' => true,
-           ));
+    <?php
+        $posts = get_posts( array(
+            'numberposts' => -1,
+            'category' => 0,
+            'orderby' => 'date',
+            'order' => 'DESC',
+            'include' => array(),
+            'exclude' => array(),
+            'meta_key' => '',
+            'meta_value' => '',
+            'post_type' => 'card',
+            'suppress_filters' => true,
+        ));
 
-           foreach($posts as $post){
-               setup_postdata($post);
+        foreach($posts as $post){
+            setup_postdata($post);
+    ?>
 
-               ?>
         <!-- BEGIN card -->
         <div class="card">
+
             <!-- BEGIN portfolio__block -->
             <div class="portfolio__block">
                 <a href="<?php the_permalink(); ?>"><img class="block portfolio__more"
@@ -59,9 +60,7 @@
         </div>
         <!-- END card -->
 
-        <?php
-           }
-        ?>
+        <?php } ?>
     </div>
     <!-- END gallery -->
 </div>

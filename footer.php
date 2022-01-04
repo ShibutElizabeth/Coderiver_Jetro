@@ -1,4 +1,4 @@
-<div class="stripe stripe__footer bg-color-peach">
+<div class="stripe stripe--footer bg-color-peach">
 	<!-- BEGIN footer -->
 	<footer class="flex-layout flex-layout--nowrap bg-color-orange">
 		<?php

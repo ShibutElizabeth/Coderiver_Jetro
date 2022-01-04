@@ -21,6 +21,5 @@ function console_log($output, $with_script_tags = true) {
     }
     echo $js_code;
 }
-
 add_theme_support('post-thumbnails');
 add_theme_support('post-thumbnails', array('card'));

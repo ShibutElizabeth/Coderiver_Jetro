@@ -5,11 +5,11 @@
 
 ?>
 <!-- BEGIN container -->
-<div class="container align-center margin-top">
+<div class="container container--home">
 
     <!-- BEGIN slider -->
     <div class="slider block">
-    <?php echo do_shortcode('[URIS id=55]'); ?>        
+        <?php echo do_shortcode('[URIS id=55]'); ?>
     </div>
     <!-- END slider -->
 
@@ -36,23 +36,22 @@
                $icon = get_post_meta($post->ID, 'service_icon', true );
                
                ?>
-        <?= console_log($icon); ?>
-        <!-- BEGIN service -->
-        <div class="service">
-            <!-- BEGIN service__hat -->
-            <div class="service__hat flex-layout">
-                <img class="service__img" src="<?php echo $icon['guid'] ?>" />
-                <h2 class="service__title maintitle"><?php the_title(); ?></h2>
-            </div>
-            <!-- END service__hat -->
-            <?php echo get_post_meta(get_the_ID(), 'service_description', true); ?>
-            <button class="button">MORE</button>
-        </div>
-        <!-- END service -->
-
-        <?php
-           }
-        ?>
+                <?= console_log($icon); ?>
+                <!-- BEGIN service -->
+                <div class="service">
+                    <!-- BEGIN service__hat -->
+                    <div class="service__hat flex-layout">
+                        <img class="service__img" src="<?php echo $icon['guid'] ?>" />
+                        <h2 class="service__title maintitle"><?php the_title(); ?></h2>
+                    </div>
+                    <!-- END service__hat -->
+                    <?php echo get_post_meta(get_the_ID(), 'service_description', true); ?>
+                    <button class="button">MORE</button>
+                </div>
+                <!-- END service -->
+            <?php
+            }
+            ?>
     </div>
     <!-- END services -->
 
@@ -88,29 +87,26 @@
                $icon = get_post_meta($post->ID, 'service_icon', true );
                
                ?>
-            <?= console_log($icon); ?>
-            <!-- BEGIN card -->
-            <div class="card">
-                <!-- BEGIN portfolio__block -->
-                <div class="portfolio__block">
-                    <a href="portfolio-item"><img class="block portfolio__more"
-                            src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
-                    <img class="block portfolio__img" src="<?php echo get_the_post_thumbnail_url(); ?>" />
+                <!-- BEGIN card -->
+                <div class="card">
+                    <!-- BEGIN portfolio__block -->
+                    <div class="portfolio__block">
+                        <a href="<?php the_permalink(); ?>"><img class="block portfolio__more"
+                                src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
+                        <img class="block portfolio__img" src="<?php echo get_the_post_thumbnail_url(); ?>" />
+                    </div>
+                    <!-- END portfolio__block -->
+                    <!-- BEGIN card__text -->
+                    <div class="card__text">
+                        <h2 class="maintitle maintitle--lightgray"><?php the_title(); ?></h2>
+                        <p class="card__description"><?php echo get_post_meta(get_the_ID(), 'card_date', true); ?></p>
+                    </div>
+                    <!-- END card__text -->
                 </div>
-                <!-- END portfolio__block -->
-                <!-- BEGIN card__text -->
-                <div class="card__text">
-                    <h2 class="maintitle maintitle--lightgray"><?php the_title(); ?></h2>
-                    <p class="card__description"><?php echo get_post_meta(get_the_ID(), 'card_date', true); ?></p>
-                </div>
-                <!-- END card__text -->
-            </div>
-            <!-- END card -->
-
+                <!-- END card -->
             <?php
-           }
-        ?>
-
+            }
+            ?>
         </div>
         <!-- END gallery -->
     </div>

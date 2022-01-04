@@ -1,37 +1,30 @@
 <div class="stripe stripe__footer bg-color-peach">
 	<!-- BEGIN footer -->
 	<footer class="flex-layout flex-layout--nowrap bg-color-orange">
-
+		<?php
+		$post_id = 326;
+		$footer = get_post( $post_id );
+		$col1 = get_post_meta($post_id, 'about_jetro', true );
+        $col3 = get_post_meta($post_id, 'contact_us', true );
+		?>
 		<!-- BEGIN footer__col -->
 		<div class="footer__col">
 			<h2 class="footer__title maintitle maintitle--white">ABOUT JETRO</h2>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ipsam asperiores, atque iure
-				consequatur neque distinctio aliquid. Incidunt molestias illo praesentium! Ab maiores debitis placeat
-				quis sequi commodi explicabo sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur molestias obcaecati cum eum
-				laudantium fugit repudiandae reprehenderit nihil est ea doloremque corrupti qui, enim, natus cupiditate
-				deleniti culpa ratione!</p>
+			<?php echo $col1?>
 		</div>
 		<!-- END footer__col -->
 
 		<!-- BEGIN footer__col -->
 		<div class="footer__col">
 			<h2 class="footer__title maintitle maintitle--white">TWITTER WIDGET</h2>
-			<p><span class="footer__twit">@firstdude</span> What an awesome design with great functionality!:)</p>
-			<p><span class="footer__twit">@seconddude</span> What an awesome design with great functionality!:)
-				<br><span class="footer__twit">about 2 hours ago</span></p>
-			<p>Follow <span class="footer__twit">@thirddude</span></p>
+			<?php echo do_shortcode('[custom-twitter-feeds]');?>
 		</div>
 		<!-- END footer__col -->
 
 		<!-- BEGIN footer__col -->
 		<div class="footer__col">
 			<h2 class="footer__title maintitle maintitle--white">CONTACT US</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur molestias obcaecati cum eum
-				laudantium fugit repudiandae reprehenderit nihil est ea doloremque corrupti qui, enim, natus cupiditate
-				deleniti culpa ratione!</p>
-			<p>imformation@jetro.com <br>1.22.333.4444</p>
-			
+			<?php echo $col3?>
 			<!-- BEGIN footer__svgblock -->
 			<div class="flex-layout flex-layout--nowrap footer__svg">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10.583mm"

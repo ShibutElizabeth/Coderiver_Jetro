@@ -246,8 +246,16 @@ footer {
 	border-right: 10px solid #fff;
 	padding-bottom: 30px;
 }
+.footer__col a{
+	color:#fff;
+	text-decoration: none;
+	cursor: pointer;
+}
 .footer__svg{
 	max-width: 200px;
+}
+.footer__svg svg:hover{
+	cursor: pointer;
 }
 .footer__col{
 	padding: 0 30px;
@@ -447,8 +455,10 @@ footer {
 .portfolio__block{
 	position: relative;
 }
+
 .portfolio__img{
 	position: relative;
+	height: 14vw;
 	transition: all 0.3s ease;
 }
 .portfolio__more{

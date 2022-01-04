@@ -126,46 +126,38 @@
         <div class="page-container__side">
 
             <?php 
-           
-           $sides = get_posts( array(
-               'numberposts' => -1,
-               'category' => 0,
-               'orderby' => 'date',
-               'order' => 'ASC',
-               'include' => array(),
-               'exclude' => array(),
-               'meta_key' => '',
-               'meta_value' => '',
-               'post_type' => 'side',
-               'suppress_filters' => true,
-           ));
-
-           foreach($sides as $side){
-               setup_postdata($side);
-               $side_title = get_post_meta($side->ID, 'side_title', true );
-               $side_text = get_post_meta($side->ID, 'side_text', true );
-               $side_list = get_post_meta($side->ID, 'side_list', false );
-               $side_gallery = get_post_meta($side->ID, 'gallery', false );
-               
+                    $sidebar_id = 341;
+                    $sidebar = get_post( $sidebar_id );
+                    $sb_about = get_post_meta($sidebar_id, 'about_jetro', true );
+                    $sb_categories = get_post_meta($sidebar_id, 'categories', false );
+                    $sb_gallery = get_post_meta($sidebar_id, 'gallery', false );
                ?>
             <!-- BEGIN page-container__sideblock -->
             <div class="page-container__sideblock">
 
-
                 <!-- BEGIN dashed-title -->
                 <div class="dashed-title flex-layout flex-layout--nowrap">
-                    <h2 class="side__title maintitle"><?php echo $side_title ?></h2>
+                    <h2 class="side__title maintitle">ABOUT JETRO</h2>
                     <div class="dashed"></div>
                 </div>
                 <!-- END dashed-title -->
-                <?php if($side_text){ ?>
-                <?php echo $side_text ?>
-                <?php }
-                if($side_list){ ?>
+                <?php echo $sb_about ?>
+            </div>
+            <!-- END page-container__sideblock -->
+
+            <!-- BEGIN page-container__sideblock -->
+            <div class="page-container__sideblock">
+
+                <!-- BEGIN dashed-title -->
+                <div class="dashed-title flex-layout flex-layout--nowrap">
+                    <h2 class="side__title maintitle">CATEGORIES</h2>
+                    <div class="dashed"></div>
+                </div>
+                <!-- END dashed-title -->
                 <!-- BEGIN category-block -->
                 <div class="category-block">
                     <?php 
-                    foreach($side_list as $item){
+                    foreach($sb_categories as $item){
                         $item_link = get_post_meta($item['ID'], 'item_link', true );
                         $item_size = get_post_meta($item['ID'], 'item_size', true );
                         $item_title = get_post_meta($item['ID'], 'item_title', true );
@@ -176,13 +168,24 @@
                     ?>
                 </div>
                 <!-- END category-block -->
-                <?php }
-                if($side_gallery){?>
+            </div>
+            <!-- END page-container__sideblock -->
+
+            <!-- BEGIN page-container__sideblock -->
+            <div class="page-container__sideblock">
+
+                <!-- BEGIN dashed-title -->
+                <div class="dashed-title flex-layout flex-layout--nowrap">
+                    <h2 class="side__title maintitle">PHOTO GALLERY</h2>
+                    <div class="dashed"></div>
+                </div>
+                <!-- END dashed-title -->
+                
                 <!-- BEGIN min-gallery -->
                 <div class="min-gallery grid-layout">
 
-                    <?php 
-                    foreach($side_gallery as $sq){
+                    <?php
+                    foreach($sb_gallery as $sq){
                         $sq_link = get_post_meta($sq['ID'], 'gallery_link', true );
                         $sq_img = get_the_post_thumbnail_url($sq['ID']);
                     ?>
@@ -192,11 +195,8 @@
                     ?>
                 </div>
                 <!-- END min-gallery -->
-                <?php } ?>
             </div>
             <!-- END page-container__sideblock -->
-            <?php }?>
-
         </div>
         <!-- END page-container__side -->
     </div>

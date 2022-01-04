@@ -53,7 +53,7 @@
 
                 <!-- BEGIN portfolio__block -->
                 <div class="portfolio__block">
-                    <a href="portfolio-item"><img class="block portfolio__more"
+                    <a href="<?php the_permalink(); ?>"><img class="block portfolio__more"
                             src="<?php bloginfo('template_url'); ?>/images/more.png" /></a>
                     <img class="block portfolio__img" src="<?php echo get_the_post_thumbnail_url(); ?>" />
                 </div>
